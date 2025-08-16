@@ -2,11 +2,13 @@
 
 ## Fastest Path to Running Demo
 
-### 1️⃣ Set Credentials (30 seconds)
+### 1️⃣ Set HubSpot Private App Token (30 seconds)
 ```bash
-export HUBSPOT_API_KEY="your-key-here"
-export HUBSPOT_PORTAL_ID="your-portal-id"
+# Get token from HubSpot Settings > Integrations > Private Apps
+export HUBSPOT_ACCESS_TOKEN="pat-na-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ```
+
+> ⚠️ **Note:** API Keys are deprecated! You MUST use a Private App access token.
 
 ### 2️⃣ Install Dependencies (2 minutes)
 ```bash
@@ -52,14 +54,18 @@ tail logs/agent_activity.log
 ## 🆘 If Something Breaks
 
 ```bash
-# Check connection
-~/claude-eng --mcp hubspot --print "ping"
+# Check connection with curl
+curl -X GET https://api.hubapi.com/crm/v3/objects/contacts?limit=1 \
+  -H "Authorization: Bearer $HUBSPOT_ACCESS_TOKEN"
 
-# If that fails, you need API keys
-echo $HUBSPOT_API_KEY  # Should show your key
+# If that fails, check your token
+echo $HUBSPOT_ACCESS_TOKEN  # Should start with pat-na- or pat-eu-
+
+# Test with our helper
+source agents/hubspot_api_helper.sh && get_contacts
 
 # Create mock demo without real HubSpot
-./mock_demo.sh  # We'll create this as backup
+./mock_demo.sh  # Fallback demo that always works
 ```
 
 ---

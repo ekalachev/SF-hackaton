@@ -12,27 +12,47 @@ This guide contains all the manual steps YOU need to complete to set up the HubS
 
 ### Step 1: HubSpot Account Setup
 
-#### 1.1 Get Your HubSpot API Credentials
+#### 1.1 Create a HubSpot Private App (Required - API Keys are Deprecated!)
+
+> ⚠️ **Important:** HubSpot deprecated API keys on November 30, 2022. You MUST use Private Apps with Bearer token authentication.
 
 1. **Log into HubSpot** at https://app.hubspot.com
 2. Navigate to **Settings** (gear icon in top right)
-3. Go to **Integrations** → **Private Apps** (or API Keys)
+3. Go to **Integrations** → **Private Apps**
 4. Click **Create a private app**
-5. Name it: `SalesSwarm AI Agents`
-6. Set scopes:
-   - CRM: `crm.objects.contacts.read`, `crm.objects.contacts.write`
-   - Tasks: `crm.objects.tasks.read`, `crm.objects.tasks.write`
-   - Emails: `sales-email-read`, `transactional-email`
-   - Workflows: `automation`
-7. Click **Create app** and copy your **API Key**
-8. Find your **Portal ID** in Settings → Account & Billing
+5. **Basic Info Tab:**
+   - Name: `SalesSwarm AI Agents`
+   - Description: `Automated lead processing and outreach agents`
+6. **Scopes Tab** - Enable these permissions:
+   - **CRM:**
+     - ✅ `crm.objects.contacts.read`
+     - ✅ `crm.objects.contacts.write`
+     - ✅ `crm.objects.companies.read`
+     - ✅ `crm.objects.companies.write`
+     - ✅ `crm.objects.deals.read`
+     - ✅ `crm.objects.deals.write`
+   - **Other Objects:**
+     - ✅ `tasks` (all permissions)
+     - ✅ `tickets` (read/write)
+   - **Communication:**
+     - ✅ `sales-email-read`
+     - ✅ `transactional-email`
+   - **Automation:**
+     - ✅ `automation` (for workflows)
+7. Click **Create app**
+8. **IMPORTANT:** Copy your **Access Token** immediately
+   - It starts with `pat-na-` (North America) or `pat-eu-` (Europe)
+   - You'll only see it once! Save it securely.
 
 #### 1.2 Set Environment Variables
 
 Add to your `~/.zshrc` or `~/.bash_profile`:
 ```bash
-export HUBSPOT_API_KEY="your-private-app-key-here"
-export HUBSPOT_PORTAL_ID="your-portal-id-here"
+# HubSpot Private App Access Token (NOT API Key!)
+export HUBSPOT_ACCESS_TOKEN="pat-na-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# Optional: If using region-specific endpoints
+export HUBSPOT_REGION="na"  # or "eu" for Europe
 ```
 
 Then reload:
@@ -124,29 +144,53 @@ Since HubSpot doesn't allow programmatic user creation, create a mock identity:
 1. Create a team called `AI-Agents`
 2. Assign tasks to this team
 
-#### Step 5: Test Claude CLI with HubSpot
+#### Step 5: Test HubSpot API Connection
 
-Run each test command manually:
+You have two options for testing:
 
+**Option A: Using curl with Bearer Token**
 ```bash
 # Test 1: Basic connectivity
-~/claude-eng --mcp hubspot --print "ping"
+curl -X GET \
+  https://api.hubapi.com/crm/v3/objects/contacts?limit=1 \
+  -H "Authorization: Bearer $HUBSPOT_ACCESS_TOKEN"
 
-# Test 2: List contacts (should work even if empty)
-~/claude-eng --mcp hubspot --print "list first 5 contacts"
+# Test 2: Get tasks
+curl -X GET \
+  https://api.hubapi.com/crm/v3/objects/tasks \
+  -H "Authorization: Bearer $HUBSPOT_ACCESS_TOKEN"
 
 # Test 3: Create a test task
-~/claude-eng --mcp hubspot --print "create task 'Test Task - AI Agent' due today"
+curl -X POST \
+  https://api.hubapi.com/crm/v3/objects/tasks \
+  -H "Authorization: Bearer $HUBSPOT_ACCESS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "properties": {
+      "hs_task_subject": "Test Task - AI Agent",
+      "hs_task_body": "This is a test task",
+      "hs_task_status": "NOT_STARTED"
+    }
+  }'
+```
 
-# Test 4: Query tasks
-~/claude-eng --mcp hubspot --print "list all open tasks"
+**Option B: Using our helper script**
+```bash
+# Source the helper functions
+source agents/hubspot_api_helper.sh
+
+# Test functions
+get_contacts
+get_tasks
+create_task "Test Task" "Test body" ""
 ```
 
 **Troubleshooting:**
-- If "command not found": Check claude-eng installation path
-- If "MCP server not found": Verify npm installation
-- If "Authentication failed": Check API key and Portal ID
-- If "Permission denied": Check API key scopes in HubSpot
+- If "401 Unauthorized": Check your access token is correct
+- If "403 Forbidden": Check Private App has required scopes
+- If "Token not found": Ensure HUBSPOT_ACCESS_TOKEN is exported
+- If "Invalid token format": Token should start with `pat-na-` or `pat-eu-`
+- If using EU account: Use `https://api.hubapi.eu` instead of `https://api.hubapi.com`
 
 ---
 
