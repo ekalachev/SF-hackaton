@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Test script for HubSpot MCP connection via claude-eng CLI
 
 echo "🧪 Testing HubSpot MCP Connection..."

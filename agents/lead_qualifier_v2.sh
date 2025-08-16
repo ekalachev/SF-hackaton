@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Lead Qualifier Agent - Using HubSpot Private App Bearer Token
 
 # Source the API helper functions

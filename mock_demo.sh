@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Mock Demo Script - Fallback if HubSpot connection fails
 
 echo "🚀 SalesSwarm AI - DEMO MODE"
