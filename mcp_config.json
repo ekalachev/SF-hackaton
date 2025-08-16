@@ -16,7 +16,7 @@
         "@modelcontextprotocol/server-hubspot"
       ],
       "env": {
-        "HUBSPOT_ACCESS_TOKEN": "pat-na2-30f8b732-2167-4521-a829-01bb51c277a5"
+        "HUBSPOT_ACCESS_TOKEN": "YOUR_HUBSPOT_ACCESS_TOKEN_HERE"
       }
     }
   }

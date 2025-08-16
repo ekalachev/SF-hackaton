@@ -17,7 +17,7 @@ Located at: `/Users/alexanderfedin/Projects/hackathons/SF-hackaton/.mcp.json`
 
 ### 3. HubSpot Access Token
 - Token saved in `~/.zshrc`
-- Token: `pat-na2-30f8b732-2167-4521-a829-01bb51c277a5`
+- Token: `[REDACTED - See .env file]`
 - Auto-loads in all shell scripts
 
 ## How to Use

@@ -30,7 +30,7 @@ echo ""
 echo "2️⃣ MCP Configurations:"
 if [ -f ~/.cursor/mcp.json ]; then
     echo -e "${GREEN}✅${NC} Cursor MCP config exists"
-    if grep -q "pat-na2-30f8b732" ~/.cursor/mcp.json; then
+    if grep -q "HUBSPOT_ACCESS_TOKEN" ~/.cursor/mcp.json; then
         echo -e "${GREEN}✅${NC} HubSpot token configured in Cursor"
     fi
 else
