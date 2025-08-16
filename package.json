@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/ekalachev/SF-hackaton#readme",
   "dependencies": {
-    "@modelcontextprotocol/server-puppeteer": "^2025.5.12"
+    "@hubspot/mcp-server": "^0.4.0",
+    "@modelcontextprotocol/server-puppeteer": "^2025.5.12",
+    "@shinzolabs/hubspot-mcp": "^2.0.5"
   }
 }
