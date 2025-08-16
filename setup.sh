@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Main setup script for SalesSwarm AI with HubSpot Task Coordination
 
 echo "🚀 Setting up SalesSwarm AI with HubSpot Task Coordination..."

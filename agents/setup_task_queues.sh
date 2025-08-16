@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Script to create HubSpot task queues and lists
 
 echo "📋 Creating HubSpot Task Queues..."

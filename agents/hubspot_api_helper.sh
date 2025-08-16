@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # HubSpot API Helper Functions using Private Apps Bearer Token Authentication
 
 # Check for access token

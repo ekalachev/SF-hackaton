@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Test Script for HubSpot Private App Authentication
 
 echo "🔐 HubSpot Private App Authentication Test"

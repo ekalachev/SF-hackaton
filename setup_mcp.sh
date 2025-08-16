@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # HubSpot MCP Server Setup Script
 
 echo "🔧 Setting up HubSpot MCP Server..."

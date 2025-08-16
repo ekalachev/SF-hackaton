@@ -14,6 +14,13 @@
       }
     }
   },
+  "puppeteer": {
+    "command": "npx",
+    "args": ["@modelcontextprotocol/server-puppeteer"],
+    "env": {
+      "PUPPETEER_EXECUTABLE_PATH": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    }
+  },
   "ai_agents": {
     "assignee": "AI-Agents",
     "email": "ai-agents@salesswarm.ai"

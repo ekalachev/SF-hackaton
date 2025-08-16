@@ -1,4 +1,5 @@
 #!/bin/bash
+source ~/.zshrc
 # Script to create AI-Agents user in HubSpot
 
 echo "👤 Setting up AI-Agents user in HubSpot..."
