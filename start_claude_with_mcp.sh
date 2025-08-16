@@ -10,4 +10,4 @@ echo "Press Enter to continue..."
 read
 
 cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton
-~/claude-eng
+~/claude-eng --mcp-config /Users/alexanderfedin/Projects/hackathons/SF-hackaton/.mcp.json
