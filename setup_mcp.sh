@@ -4,15 +4,12 @@
 echo "🔧 Setting up HubSpot MCP Server..."
 
 # Check for required environment variables
-if [ -z "$HUBSPOT_API_KEY" ]; then
-    echo "⚠️  HUBSPOT_API_KEY not set. Please export HUBSPOT_API_KEY=your-key"
-    echo "   You can get your API key from: https://app.hubspot.com/settings/integrations/api-keys"
-    exit 1
-fi
-
-if [ -z "$HUBSPOT_PORTAL_ID" ]; then
-    echo "⚠️  HUBSPOT_PORTAL_ID not set. Please export HUBSPOT_PORTAL_ID=your-portal-id"
-    echo "   Find your Portal ID in HubSpot Settings > Account & Billing"
+if [ -z "$HUBSPOT_ACCESS_TOKEN" ]; then
+    echo "⚠️  HUBSPOT_ACCESS_TOKEN not set. Please export HUBSPOT_ACCESS_TOKEN=your-private-app-token"
+    echo "   To get your access token:"
+    echo "   1. Go to HubSpot Settings > Integrations > Private Apps"
+    echo "   2. Create a new Private App or use existing one"
+    echo "   3. Copy the Access Token (starts with 'pat-na-' or 'pat-eu-')"
     exit 1
 fi
 

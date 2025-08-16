@@ -2,10 +2,9 @@
   "mcp_servers": {
     "hubspot": {
       "command": "npx",
-      "args": ["@hubspot/mcp-server"],
+      "args": ["@modelcontextprotocol/server-hubspot"],
       "env": {
-        "HUBSPOT_API_KEY": "${HUBSPOT_API_KEY}",
-        "HUBSPOT_PORTAL_ID": "${HUBSPOT_PORTAL_ID}"
+        "HUBSPOT_ACCESS_TOKEN": "${HUBSPOT_ACCESS_TOKEN}"
       },
       "capabilities": {
         "contacts": true,
