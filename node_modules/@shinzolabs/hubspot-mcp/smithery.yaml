@@ -1,0 +1,15 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: http
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - HUBSPOT_ACCESS_TOKEN
+    properties:
+      HUBSPOT_ACCESS_TOKEN:
+        type: string
+        description: "HUBSPOT_ACCESS_TOKEN - Your HubSpot API access token"
+  exampleConfig:
+    HUBSPOT_ACCESS_TOKEN: your-token-here
