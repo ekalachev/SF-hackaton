@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "condition": "task_type == 'Qualify Lead'",
+      "assignee": "AI-Agents",
+      "auto_accept": true
+    },
+    {
+      "condition": "task_type == 'Send Outreach'",
+      "assignee": "AI-Agents",
+      "auto_accept": true
+    },
+    {
+      "condition": "task_type == 'Enrich Data'",
+      "assignee": "AI-Agents",
+      "auto_accept": true
+    },
+    {
+      "condition": "lead_score > 85",
+      "assignee": "Sales Team",
+      "auto_accept": false,
+      "escalation": "immediate"
+    }
+  ]
+}
