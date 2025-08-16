@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-08-16T18:45:53Z",
+  "tests": [
+    {"name": "Basic Connection", "status": "pending", "command": "ping"},
+    {"name": "List Contacts", "status": "pending", "command": "list first 5 contacts"},
+    {"name": "Check Task Queues", "status": "pending", "command": "list all task queues"},
+    {"name": "Create Test Task", "status": "pending", "command": "create task"},
+    {"name": "Query AI-Agent Tasks", "status": "pending", "command": "count tasks"}
+  ],
+  "notes": "Run with actual claude-eng CLI to execute tests"
+}

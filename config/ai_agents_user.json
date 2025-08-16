@@ -1,0 +1,27 @@
+{
+  "user": {
+    "email": "ai-agents@salesswarm.ai",
+    "firstName": "AI",
+    "lastName": "Agents",
+    "role": "Sales Automation",
+    "permissions": {
+      "contacts": ["read", "write", "delete"],
+      "tasks": ["read", "write", "complete"],
+      "emails": ["send", "read"],
+      "workflows": ["trigger", "read"],
+      "activities": ["create", "read"]
+    }
+  },
+  "api_settings": {
+    "rate_limit": 100,
+    "concurrent_tasks": 5,
+    "retry_attempts": 3,
+    "timeout_seconds": 30
+  },
+  "task_assignment": {
+    "default_queue": "AI Processing Queue",
+    "auto_accept": true,
+    "priority_handling": "FIFO",
+    "max_tasks_per_minute": 20
+  }
+}
