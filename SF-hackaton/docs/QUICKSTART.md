@@ -1,5 +1,7 @@
 # 🚀 QUICKSTART - 5 Minute Setup
 
+**Author:** Alex Fedin | [O2.services](https://O2.services) | [LinkedIn](https://linkedin.com/in/alex-fedin)
+
 ## Fastest Path to Running Demo
 
 ### 1️⃣ Set HubSpot Private App Token (30 seconds)

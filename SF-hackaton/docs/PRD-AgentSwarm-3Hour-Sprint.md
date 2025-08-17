@@ -1,6 +1,8 @@
 # Product Requirements Document: HubSpot Agent Swarm
 ## 3-Hour Hackathon Sprint - HubSpot-Native Coordination
 
+**Author:** Alex Fedin | [O2.services](https://O2.services) | [LinkedIn](https://linkedin.com/in/alex-fedin)
+
 ### Executive Summary
 **Product Name:** SalesSwarm AI  
 **Mission:** Build autonomous agents that coordinate through HubSpot's native task system  

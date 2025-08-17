@@ -103,4 +103,19 @@ All participants are expected to:
 
 ---
 
+## 👨‍💻 Project Authors
+
+**Alex Fedin**  
+Founder & CEO, [O2.services](https://O2.services)  
+[LinkedIn](https://linkedin.com/in/alex-fedin)
+
+**Eldar Kalachev**  
+Co-Founder & CTO, [O2.services](https://O2.services)  
+[LinkedIn](https://www.linkedin.com/in/eldar-kalachev/)
+
+**O2.services AI Hive**  
+AI-Powered Development Team
+
+---
+
 **Ready to revolutionize sales with AI? See you at the hackathon!** 🚀

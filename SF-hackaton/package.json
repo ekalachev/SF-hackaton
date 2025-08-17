@@ -18,9 +18,14 @@
     "type": "git",
     "url": "git+https://github.com/ekalachev/SF-hackaton.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["ai", "hackathon", "hubspot", "sales-automation", "ai-agents"],
+  "author": "Alex Fedin <alex@o2.services> (https://linkedin.com/in/alex-fedin), Eldar Kalachev (https://www.linkedin.com/in/eldar-kalachev/)",
+  "contributors": [
+    "Alex Fedin <alex@o2.services> (https://linkedin.com/in/alex-fedin)",
+    "Eldar Kalachev (https://www.linkedin.com/in/eldar-kalachev/)",
+    "O2.services AI Hive"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ekalachev/SF-hackaton/issues"
   },

@@ -1,5 +1,7 @@
 # 📋 Manual Setup Guide for SalesSwarm AI Hackathon
 
+**Author:** Alex Fedin | [O2.services](https://O2.services) | [LinkedIn](https://linkedin.com/in/alex-fedin)
+
 ## Overview
 This guide contains all the manual steps YOU need to complete to set up the HubSpot integration and get the AI agent swarm running for the hackathon. Follow these steps in order.
 
