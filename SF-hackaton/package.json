@@ -1,6 +1,6 @@
 {
   "name": "sf-hackaton",
-  "version": "1.4.2",
+  "version": "1.8.0",
   "description": "## Build the Future of Sales!",
   "main": "index.js",
   "directories": {
