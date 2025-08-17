@@ -1,0 +1,32 @@
+{
+  "task_templates": [
+    {
+      "name": "Qualify Lead",
+      "queue": "AI Processing Queue",
+      "assignee": "AI-Agents",
+      "priority": "NORMAL",
+      "template": "Qualify Lead {contact_id} - Score and categorize"
+    },
+    {
+      "name": "Send Outreach",
+      "queue": "AI Processing Queue", 
+      "assignee": "AI-Agents",
+      "priority": "NORMAL",
+      "template": "Send Outreach to {contact_id} - Personalized email"
+    },
+    {
+      "name": "Enrich Data",
+      "queue": "AI Processing Queue",
+      "assignee": "AI-Agents", 
+      "priority": "LOW",
+      "template": "Enrich Data for {contact_id} - Fill missing fields"
+    },
+    {
+      "name": "Human Review",
+      "queue": "Human Review Queue",
+      "assignee": "Sales Team",
+      "priority": "HIGH",
+      "template": "Review high-value lead {contact_id} - Score: {score}"
+    }
+  ]
+}

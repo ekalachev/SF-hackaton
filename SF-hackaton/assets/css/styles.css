@@ -1,0 +1,168 @@
+/* Styles for AI Development Report */
+
+.mermaid-diagram-wrapper {
+    background-color: #e8e8e8;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow:
+        /* Lighter shadows with 50% reduced opacity */
+        inset 0 8px 10px rgba(0, 0, 0, 0.2),
+        inset 0 15px 20px rgba(0, 0, 0, 0.15),
+        inset 0 25px 30px rgba(0, 0, 0, 0.1),
+        inset 0 -4px 6px rgba(0, 0, 0, 0.1),
+        /* Strong highlight on bottom edge */
+        inset 0 -2px 0 rgba(255, 255, 255, 0.7);
+    border: 1px solid #c0c0c0;
+    position: relative;
+    display: table;
+    width: auto;
+    min-width: min-content;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Make all table text black */
+.mermaid-diagram-wrapper table {
+    color: #000000;
+    border-collapse: collapse;
+}
+
+.mermaid-diagram-wrapper th,
+.mermaid-diagram-wrapper td {
+    color: #000000 !important;
+}
+
+.mermaid-diagram-wrapper table * {
+    color: #000000 !important;
+}
+
+/* Force black text in all table cells */
+.mermaid-diagram-wrapper-deep table {
+    color: #000000;
+    border-collapse: collapse;
+}
+
+.mermaid-diagram-wrapper-deep th,
+.mermaid-diagram-wrapper-deep td {
+    color: #000000 !important;
+}
+
+.mermaid-diagram-wrapper-deep table * {
+    color: #000000 !important;
+}
+
+/* Ensure Mermaid diagrams have adequate space */
+.mermaid-diagram-wrapper .mermaid {
+    min-width: 600px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.mermaid-diagram-wrapper pre.mermaid {
+    min-width: 600px;
+    width: 100%;
+}
+
+/* For actual rendered Mermaid SVGs */
+.mermaid-diagram-wrapper svg {
+    min-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+/* Make timeline diagrams bigger */
+.mermaid-diagram-wrapper .mermaid svg[id*="timeline"],
+.mermaid-diagram-wrapper svg.timeline {
+    min-height: 400px;
+    min-width: 900px;
+    width: 100%;
+    height: auto;
+}
+
+/* Scale up timeline content */
+.mermaid-diagram-wrapper .mermaid[data-processed*="timeline"] {
+    transform: scale(1.3);
+    transform-origin: center;
+    margin: 40px auto;
+}
+
+/* Make all Mermaid diagram text black */
+.mermaid-diagram-wrapper .mermaid text {
+    fill: #000000 !important;
+}
+
+.mermaid-diagram-wrapper .mermaid .nodeLabel {
+    color: #000000 !important;
+}
+
+.mermaid-diagram-wrapper .mermaid .label {
+    color: #000000 !important;
+    fill: #000000 !important;
+}
+
+/* Specifically for Sankey diagrams */
+.mermaid-diagram-wrapper .mermaid .sankey-node-label {
+    fill: #000000 !important;
+}
+
+.mermaid-diagram-wrapper .mermaid .sankey-link-label {
+    fill: #000000 !important;
+}
+
+/* Add pseudo-element for additional depth */
+.mermaid-diagram-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.075) 0%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.075) 100%
+    );
+    pointer-events: none;
+}
+
+/* Optional: Deeper carved effect with gradient and 50% reduced shadows */
+.mermaid-diagram-wrapper-deep {
+    background: linear-gradient(to bottom, #d5d5d5, #e5e5e5);
+    padding: 35px;
+    border-radius: 15px;
+    margin: 35px 0;
+    box-shadow:
+        /* Lighter shadows with 50% reduced opacity */
+        inset 0 10px 15px rgba(0, 0, 0, 0.25),
+        inset 0 20px 25px rgba(0, 0, 0, 0.2),
+        inset 0 35px 40px rgba(0, 0, 0, 0.15),
+        inset 0 -6px 10px rgba(0, 0, 0, 0.125),
+        /* Very strong highlight edges */
+        inset 0 -3px 0 rgba(255, 255, 255, 0.8),
+        0 2px 4px rgba(255, 255, 255, 0.4);
+    border: 1px solid #b5b5b5;
+    display: table;
+    width: auto;
+    min-width: min-content;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Make Competition Clock diagram bigger */
+.mermaid-diagram-wrapper-deep .mermaid {
+    min-height: 350px;
+    min-width: 700px;
+    transform: scale(1.05);
+    transform-origin: center;
+    margin: 20px auto;
+}
+
+.mermaid-diagram-wrapper-deep svg {
+    min-height: 340px;
+    min-width: 680px;
+    width: 100%;
+    height: auto;
+}

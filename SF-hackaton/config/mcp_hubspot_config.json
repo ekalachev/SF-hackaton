@@ -1,0 +1,34 @@
+{
+  "mcp_servers": {
+    "hubspot": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-hubspot"],
+      "env": {
+        "HUBSPOT_ACCESS_TOKEN": "${HUBSPOT_ACCESS_TOKEN}"
+      },
+      "capabilities": {
+        "contacts": true,
+        "tasks": true,
+        "emails": true,
+        "workflows": true
+      }
+    }
+  },
+  "puppeteer": {
+    "command": "npx",
+    "args": ["@modelcontextprotocol/server-puppeteer"],
+    "env": {
+      "PUPPETEER_EXECUTABLE_PATH": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    }
+  },
+  "ai_agents": {
+    "assignee": "AI-Agents",
+    "email": "ai-agents@salesswarm.ai"
+  },
+  "task_prefixes": {
+    "qualify": "Qualify Lead",
+    "outreach": "Send Outreach",
+    "enrich": "Enrich Data",
+    "followup": "Follow up"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "workflows": [
+    {
+      "trigger": "contact_created",
+      "action": "create_task",
+      "task_type": "Enrich Data",
+      "assignee": "AI-Agents",
+      "due_in_minutes": 5
+    },
+    {
+      "trigger": "form_submitted", 
+      "action": "create_task",
+      "task_type": "Qualify Lead",
+      "assignee": "AI-Agents",
+      "due_in_minutes": 1
+    },
+    {
+      "trigger": "lead_score_above_70",
+      "action": "create_task",
+      "task_type": "Send Outreach",
+      "assignee": "AI-Agents",
+      "due_in_minutes": 30
+    },
+    {
+      "trigger": "lead_score_above_85",
+      "action": "create_task",
+      "task_type": "Human Review",
+      "assignee": "Sales Team",
+      "due_in_minutes": 60
+    }
+  ]
+}

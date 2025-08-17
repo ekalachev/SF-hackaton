@@ -1,0 +1,37 @@
+{
+  "analysis_timestamp": "2025-08-16T17:09:21.687719",
+  "repository": {
+    "path": "/Users/alexanderfedin/Projects/hackathons/SF-hackaton",
+    "total_commits": 36,
+    "actual_project_files": 61,
+    "total_lines": 11887,
+    "repository_size": "306M",
+    "node_modules_size": "282M",
+    "time_span_hours": 5.41,
+    "time_span_days": 0.23
+  },
+  "human_estimation": {
+    "average_days": 171.2,
+    "cost_estimate": 136938.0
+  },
+  "ai_actual": {
+    "actual_days": 0.5,
+    "actual_hours": 4.0,
+    "cost_actual": 420.0,
+    "efficiency_multiplier": 342.3
+  },
+  "comparison": {
+    "time_saved_days": 170.7,
+    "cost_savings": 136518.0,
+    "productivity_ratio": 342.3,
+    "roi_percentage": 32504.0
+  },
+  "file_breakdown": {
+    "python_scripts": 6,
+    "javascript_files": 2,
+    "shell_scripts": 27,
+    "config_json": 13,
+    "documentation_md": 8,
+    "total_actual_files": 61
+  }
+}

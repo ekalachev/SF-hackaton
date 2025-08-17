@@ -1,0 +1,15 @@
+{
+  "name": "hackathons",
+  "version": "1.0.0",
+  "main": "hubspot-auto-login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "puppeteer-core": "^24.16.2"
+  }
+}

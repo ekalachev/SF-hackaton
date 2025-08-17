@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.iws
+
+# OS - macOS
+.DS_Store
+*.swp
+*.swo
+
+# Build outputs
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+
+# Chrome user data
+hubspot-user-data/
+
+# MCP configuration (may contain sensitive data)
+.mcp.json
+
+# Claude configuration
+.claude/
+
+# Package lock files (optional, but usually tracked)
+# package-lock.json
+# yarn.lock
