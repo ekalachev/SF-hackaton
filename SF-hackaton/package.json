@@ -1,6 +1,6 @@
 {
   "name": "sf-hackaton",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "## Build the Future of Sales!",
   "main": "index.js",
   "directories": {
@@ -10,9 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "setup": "./setup.sh",
-    "demo": "./demo.sh",
-    "verify": "./verify_setup.sh"
+    "setup": "./scripts/bash/setup/setup.sh",
+    "demo": "./scripts/bash/demo/demo.sh",
+    "verify": "./scripts/bash/setup/verify_setup.sh"
   },
   "repository": {
     "type": "git",
