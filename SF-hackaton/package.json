@@ -10,9 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "setup": "./setup.sh",
-    "demo": "./demo.sh",
-    "verify": "./verify_setup.sh"
+    "setup": "./scripts/bash/setup/setup.sh",
+    "demo": "./scripts/bash/demo/demo.sh",
+    "verify": "./scripts/bash/setup/verify_setup.sh"
   },
   "repository": {
     "type": "git",
