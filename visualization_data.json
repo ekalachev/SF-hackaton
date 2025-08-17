@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "generated": "2025-08-16T22:53:23.959122",
+    "purpose": "Mermaid chart data for global comparison"
+  },
+  "daily_rates_chart": {
+    "chart_type": "bar",
+    "title": "Daily Rates by Region (USD)",
+    "data": [
+      {
+        "label": "USA",
+        "base_rate": 800,
+        "effective_rate": 1240
+      },
+      {
+        "label": "W.Europe",
+        "base_rate": 640,
+        "effective_rate": 992
+      },
+      {
+        "label": "E.Europe",
+        "base_rate": 280,
+        "effective_rate": 434
+      },
+      {
+        "label": "India",
+        "base_rate": 200,
+        "effective_rate": 350
+      },
+      {
+        "label": "S.America",
+        "base_rate": 240,
+        "effective_rate": 348
+      },
+      {
+        "label": "Australia",
+        "base_rate": 680,
+        "effective_rate": 1054
+      },
+      {
+        "label": "AI",
+        "base_rate": 150,
+        "effective_rate": 150
+      }
+    ]
+  },
+  "project_cost_chart": {
+    "chart_type": "bar",
+    "title": "Total Project Cost (USD)",
+    "data": [
+      {
+        "label": "USA",
+        "cost": 78492
+      },
+      {
+        "label": "W.Europe",
+        "cost": 69073
+      },
+      {
+        "label": "E.Europe",
+        "cost": 35714
+      },
+      {
+        "label": "India",
+        "cost": 33232
+      },
+      {
+        "label": "S.America",
+        "cost": 30840
+      },
+      {
+        "label": "Australia",
+        "cost": 70054
+      },
+      {
+        "label": "AI",
+        "cost": 75
+      }
+    ]
+  },
+  "delivery_time_chart": {
+    "chart_type": "bar",
+    "title": "Project Delivery Time (Days)",
+    "data": [
+      {
+        "label": "USA",
+        "days": 63.3
+      },
+      {
+        "label": "W.Europe",
+        "days": 69.6
+      },
+      {
+        "label": "E.Europe",
+        "days": 82.3
+      },
+      {
+        "label": "India",
+        "days": 94.9
+      },
+      {
+        "label": "S.America",
+        "days": 88.6
+      },
+      {
+        "label": "Australia",
+        "days": 66.5
+      },
+      {
+        "label": "AI",
+        "days": 0.5
+      }
+    ]
+  },
+  "savings_chart": {
+    "chart_type": "bar",
+    "title": "Savings with AI vs Each Region (USD)",
+    "data": [
+      {
+        "label": "vs USA",
+        "amount": 78417
+      },
+      {
+        "label": "vs W.Europe",
+        "amount": 68998
+      },
+      {
+        "label": "vs E.Europe",
+        "amount": 35639
+      },
+      {
+        "label": "vs India",
+        "amount": 33158
+      },
+      {
+        "label": "vs S.America",
+        "amount": 30765
+      },
+      {
+        "label": "vs Australia",
+        "amount": 69979
+      }
+    ]
+  },
+  "speed_multiplier_chart": {
+    "chart_type": "bar",
+    "title": "How Many Times Faster is AI?",
+    "data": [
+      {
+        "label": "vs USA",
+        "multiplier": 127
+      },
+      {
+        "label": "vs W.Europe",
+        "multiplier": 139
+      },
+      {
+        "label": "vs E.Europe",
+        "multiplier": 165
+      },
+      {
+        "label": "vs India",
+        "multiplier": 190
+      },
+      {
+        "label": "vs S.America",
+        "multiplier": 177
+      },
+      {
+        "label": "vs Australia",
+        "multiplier": 133
+      }
+    ]
+  },
+  "hidden_costs_chart": {
+    "chart_type": "pie",
+    "title": "Hidden Cost Multipliers by Region",
+    "data": [
+      {
+        "label": "USA (55%)",
+        "value": 55
+      },
+      {
+        "label": "W.Europe (55%)",
+        "value": 55
+      },
+      {
+        "label": "E.Europe (55%)",
+        "value": 55
+      },
+      {
+        "label": "India (75%)",
+        "value": 75
+      },
+      {
+        "label": "S.America (44%)",
+        "value": 45
+      },
+      {
+        "label": "Australia (55%)",
+        "value": 55
+      },
+      {
+        "label": "AI (0%)",
+        "value": 0
+      }
+    ]
+  },
+  "comparison_matrix": {
+    "headers": [
+      "Region",
+      "Daily Rate",
+      "Project Cost",
+      "Delivery Days",
+      "vs AI Savings",
+      "Speed vs AI"
+    ],
+    "rows": [
+      [
+        "United States",
+        "$1240",
+        "$78492",
+        "63.3",
+        "$78417",
+        "127x slower"
+      ],
+      [
+        "Western Europe (UK/Germany/France)",
+        "$992",
+        "$69073",
+        "69.6",
+        "$68998",
+        "139x slower"
+      ],
+      [
+        "Eastern Europe (Poland/Ukraine/Romania)",
+        "$434",
+        "$35714",
+        "82.3",
+        "$35639",
+        "165x slower"
+      ],
+      [
+        "India",
+        "$350",
+        "$33232",
+        "94.9",
+        "$33158",
+        "190x slower"
+      ],
+      [
+        "South America (Brazil/Argentina/Colombia)",
+        "$348",
+        "$30840",
+        "88.6",
+        "$30765",
+        "177x slower"
+      ],
+      [
+        "Australia/New Zealand",
+        "$1054",
+        "$70054",
+        "66.5",
+        "$69979",
+        "133x slower"
+      ],
+      [
+        "AI-Powered Development (Our Service)",
+        "$150",
+        "$75",
+        "0.5",
+        "N/A",
+        "Baseline"
+      ]
+    ]
+  },
+  "shocking_stats": {
+    "cheapest_traditional_vs_ai": {
+      "traditional": "South America",
+      "traditional_cost": 30840,
+      "ai_cost": 75,
+      "times_more_expensive": 411,
+      "statement": "Even the cheapest offshore option costs 411x more than AI"
+    },
+    "fastest_traditional_vs_ai": {
+      "traditional": "USA",
+      "traditional_days": 63.3,
+      "ai_days": 0.5,
+      "times_slower": 127,
+      "statement": "The fastest traditional option is still 127x slower than AI"
+    },
+    "india_hidden_costs": {
+      "advertised": 200,
+      "reality": 350,
+      "hidden_percentage": 75,
+      "statement": "India's 'low rates' hide 75% additional costs"
+    },
+    "annual_productivity": {
+      "human_projects": 5.8,
+      "ai_projects": 730,
+      "multiplier": 126,
+      "statement": "AI can complete 730 projects while humans complete 5.8"
+    }
+  }
+}

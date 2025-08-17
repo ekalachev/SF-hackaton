@@ -10,20 +10,19 @@
   },
   "human_estimation": {
     "average_days": 63.3,
-    "cost_estimate": 50640.0
+    "cost_estimate": 50619.0
   },
   "ai_actual": {
     "actual_days": 0.5,
     "actual_hours": 4.0,
-    "cost_actual": 25.0,
-    "efficiency_multiplier": 126.5,
-    "daily_rate": 50
+    "cost_actual": 420.0,
+    "efficiency_multiplier": 126.5
   },
   "comparison": {
     "time_saved_days": 62.8,
-    "cost_savings": 50615.0,
+    "cost_savings": 50199.0,
     "productivity_ratio": 126.5,
-    "roi_percentage": 202460.0
+    "roi_percentage": 11952.0
   },
   "file_breakdown": {
     "ai_agents": 9,
