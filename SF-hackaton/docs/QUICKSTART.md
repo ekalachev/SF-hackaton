@@ -1,6 +1,20 @@
+[🏠 Home](../README.md) | [📚 Documentation](index.md)
+
+---
+
 # 🚀 QUICKSTART - 5 Minute Setup
 
 **Author:** Alex Fedin | [O2.services](https://O2.services) | [LinkedIn](https://linkedin.com/in/alex-fedin)
+
+## 📑 Table of Contents
+1. [Fastest Path to Running Demo](#fastest-path-to-running-demo)
+2. [Set HubSpot Token](#1️⃣-set-hubspot-private-app-token-30-seconds)
+3. [Quick Install](#2️⃣-quick-install-2-minutes)
+4. [Test Connection](#3️⃣-test-connection-30-seconds)
+5. [Run Demo](#4️⃣-run-demo-2-minutes)
+6. [Next Steps](#next-steps)
+
+---
 
 ## Fastest Path to Running Demo
 
@@ -82,3 +96,15 @@ source agents/hubspot_api_helper.sh && get_contacts
 4. **Impact:** 95% time savings, 24/7 operation, zero infrastructure
 
 **Remember:** Judges want to see it WORK, not perfect code!
+
+---
+
+## Next Steps
+
+- [📋 Manual Setup Guide](MANUAL-SETUP-GUIDE.md) - Detailed configuration
+- [🏗️ Architecture Documentation](architecture/index.md) - System design
+- [🎬 Demo Guide](demo/DEMO_README.md) - Running demonstrations
+
+---
+
+[⬆️ Top](#-quickstart---5-minute-setup) | [📚 Documentation](index.md) | [Next: Manual Setup →](MANUAL-SETUP-GUIDE.md)
