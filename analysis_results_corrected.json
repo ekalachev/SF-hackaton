@@ -3,10 +3,9 @@
   "repository": {
     "path": "/Users/alexanderfedin/Projects/hackathons/SF-hackaton",
     "total_commits": 36,
-    "total_files": 61,
+    "actual_project_files": 61,
     "total_lines": 11887,
     "repository_size": "306M",
-    "actual_project_size": "~24MB (excluding node_modules)",
     "node_modules_size": "282M",
     "time_span_hours": 5.41,
     "time_span_days": 0.23
@@ -27,7 +26,7 @@
     "productivity_ratio": 342.3,
     "roi_percentage": 32504.0
   },
-  "breakdown_by_type": {
+  "file_breakdown": {
     "python_scripts": 6,
     "javascript_files": 2,
     "shell_scripts": 27,
