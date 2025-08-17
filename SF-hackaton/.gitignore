@@ -6,5 +6,5 @@
 logs/*.log
 *.log
 
-# Node modules
+# Dependencies
 node_modules/
