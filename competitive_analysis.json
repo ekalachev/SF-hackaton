@@ -1,0 +1,62 @@
+{
+  "pricing_strategy": {
+    "our_daily_rate": 150,
+    "our_project_cost": 75.0,
+    "our_delivery_days": 0.5,
+    "our_delivery_hours": 4
+  },
+  "competition": {
+    "us_developer": {
+      "daily_rate": 800,
+      "project_cost": 50640.0,
+      "delivery_days": 63.3,
+      "hidden_costs": "None",
+      "total_cost": 50640.0
+    },
+    "india_senior": {
+      "daily_rate": 320,
+      "base_project_cost": 25600,
+      "overhead_multiplier": 1.2,
+      "delivery_days": 80,
+      "hidden_costs": "20% communication overhead",
+      "total_cost": 30720.0
+    },
+    "india_mid": {
+      "daily_rate": 200,
+      "base_project_cost": 19000,
+      "overhead_multiplier": 1.3,
+      "delivery_days": 95,
+      "hidden_costs": "30% rework + delays",
+      "total_cost": 24700.0
+    }
+  },
+  "customer_value": {
+    "savings_vs_us": 50565.0,
+    "savings_vs_india_senior": 30645.0,
+    "savings_vs_india_mid": 24625.0,
+    "time_to_market_advantage_days": 62.8,
+    "customer_roi_percentage": 67420.0
+  },
+  "business_model": {
+    "revenue_per_project": 75.0,
+    "cost_per_project": 25,
+    "profit_per_project": 50.0,
+    "profit_margin_percentage": 66.66666666666666,
+    "internal_roi_percentage": 200.0
+  },
+  "market_impact": {
+    "daily_burn_traditional": 800,
+    "daily_burn_ai": 150,
+    "monthly_savings": 13000,
+    "annual_savings": 162500,
+    "projects_possible_traditional": 1,
+    "projects_possible_ai": 675
+  },
+  "fomo_metrics": {
+    "competitor_features_per_month": 60,
+    "your_features_per_month_traditional": 0,
+    "market_capture_days_difference": 62.8,
+    "revenue_lost_per_day_delayed": 16000,
+    "total_opportunity_cost": 1004800.0
+  }
+}
