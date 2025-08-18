@@ -45,6 +45,106 @@ Analyze this codebase and create comprehensive architectural documentation. Your
 - Review error handling and logging strategies
 - Examine testing approach and coverage
 
+### Ontological Model Analysis
+Identify and document the knowledge representation in the codebase:
+
+**Domain Ontology Discovery:**
+- **Entity Identification**: Find all domain concepts and their hierarchies
+  - Core business entities (Customer, Product, Order)
+  - Supporting entities (Address, Payment, Shipment)
+  - Meta-entities (Audit, Version, History)
+  - Abstract concepts (Policy, Rule, Strategy)
+
+- **Relationship Mapping**: Document all entity relationships
+  - Inheritance hierarchies (is-a relationships)
+  - Composition relationships (has-a, part-of)
+  - Association relationships (uses, references)
+  - Dependency relationships (depends-on, requires)
+  - Temporal relationships (precedes, follows)
+
+- **Property Analysis**: Identify attributes and characteristics
+  - Intrinsic properties (immutable characteristics)
+  - Extrinsic properties (contextual attributes)
+  - Derived properties (calculated values)
+  - Metadata properties (timestamps, versions)
+
+- **Constraint Rules**: Document business rules and invariants
+  - Cardinality constraints (one-to-many, many-to-many)
+  - Existence dependencies (must-have, optional)
+  - Value constraints (ranges, enumerations)
+  - Behavioral constraints (state transitions)
+
+**Knowledge Graph Construction:**
+- Map entities to nodes
+- Map relationships to edges
+- Identify graph patterns (cycles, hierarchies, clusters)
+- Document inference rules
+- Find implicit relationships
+
+**Semantic Layer Analysis:**
+- **Vocabulary Consistency**: Check naming coherence
+  - Synonym detection (same concept, different names)
+  - Homonym detection (same name, different concepts)
+  - Ubiquitous language adherence (DDD)
+  
+- **Taxonomic Structure**: Analyze classification systems
+  - Category hierarchies
+  - Type systems
+  - Classification schemes
+  - Tagging systems
+
+**Ontological Patterns:**
+- **Upper Ontology Patterns**:
+  - Thing/Object/Entity pattern
+  - Process/Event/Activity pattern
+  - Role/Function pattern
+  - Location/Space pattern
+  - Time/Temporal pattern
+
+- **Domain Patterns**:
+  - Product catalog ontology
+  - Organization structure ontology
+  - Document/Content ontology
+  - Workflow/Process ontology
+  - Financial/Transaction ontology
+
+**Reasoning Capabilities:**
+- Identify inference opportunities
+- Document derivation rules
+- Find transitive relationships
+- Detect contradiction potential
+- Evaluate completeness
+
+**Generate Ontology Diagrams:**
+```mermaid
+graph TD
+    %% Domain Ontology Example
+    Thing[Thing]
+    Thing --> Entity[Entity]
+    Thing --> Event[Event]
+    Entity --> Person[Person]
+    Entity --> Organization[Organization]
+    Entity --> Product[Product]
+    Person --> Customer[Customer]
+    Person --> Employee[Employee]
+    Event --> Transaction[Transaction]
+    Event --> Communication[Communication]
+    Transaction --> Order[Order]
+    Transaction --> Payment[Payment]
+    
+    Customer -.->|places| Order
+    Order -.->|contains| Product
+    Employee -.->|processes| Order
+    Order -.->|triggers| Payment
+```
+
+**Ontology Quality Metrics:**
+- Completeness (coverage of domain)
+- Consistency (no contradictions)
+- Conciseness (no redundancy)
+- Clarity (unambiguous definitions)
+- Computability (machine-processable)
+
 ### Software Engineering Principles Analysis
 Evaluate adherence to fundamental principles and methodologies:
 
@@ -305,15 +405,97 @@ For each major component, document:
 
 ## 3. TECHNICAL DOCUMENTATION
 
-### API Documentation
-For each API endpoint:
-- HTTP method and path
-- Request/response schemas
-- Authentication requirements
-- Rate limiting and quotas
-- Error codes and meanings
-- Example requests/responses
-- SDK/client usage examples
+### Interface & Communication Documentation
+
+**Auto-Discovery Approach:**
+Scan the codebase to identify ALL communication interfaces by looking for:
+
+1. **Interface Detection Patterns:**
+   - Network listeners (ports, sockets, endpoints)
+   - Serialization/deserialization code
+   - Protocol handlers and parsers
+   - Message routing and dispatching
+   - Client/server initialization code
+   - Configuration files mentioning protocols
+   - Dependencies that indicate communication libraries
+
+2. **Generic Interface Analysis Framework:**
+   For EACH discovered interface, regardless of technology:
+   
+   **Communication Model:**
+   - Synchronous vs Asynchronous
+   - Request-Response vs Fire-and-Forget vs Streaming
+   - Point-to-Point vs Publish-Subscribe vs Broadcast
+   - Stateful vs Stateless
+   - Connection-oriented vs Connectionless
+   
+   **Data Contract:**
+   - Message format (binary, text, structured)
+   - Schema definition (strict, flexible, schema-less)
+   - Serialization method (JSON, XML, Protobuf, custom)
+   - Versioning strategy
+   - Backward/forward compatibility
+   
+   **Transport Characteristics:**
+   - Network protocol (TCP, UDP, WebSocket, etc.)
+   - Local protocol (IPC, shared memory, pipes)
+   - Reliability guarantees
+   - Ordering guarantees
+   - Delivery semantics (at-most-once, at-least-once, exactly-once)
+   
+   **Interaction Patterns:**
+   - Operations/methods exposed
+   - Parameter passing conventions
+   - Return value/response handling
+   - Error propagation mechanism
+   - Timeout and retry behavior
+   
+   **Quality Attributes:**
+   - Authentication mechanism
+   - Authorization model
+   - Encryption (transport, message)
+   - Rate limiting/throttling
+   - Performance characteristics
+   - Scalability considerations
+
+3. **Universal Documentation Template:**
+   ```yaml
+   interface:
+     discovered_type: [auto-detected protocol/framework]
+     location: [file:line where defined]
+     
+     communication:
+       model: [sync/async, pattern]
+       transport: [protocol, guarantees]
+       
+     contract:
+       format: [serialization type]
+       schema: [location or inline]
+       versioning: [strategy]
+       
+     operations:
+       - name: [operation]
+         input: [schema/type]
+         output: [schema/type]
+         errors: [possible errors]
+         
+     security:
+       auth: [method]
+       encryption: [type]
+       
+     usage:
+       examples: [client code]
+       sdk: [available libraries]
+   ```
+
+4. **Automatic Classification:**
+   Based on discovered patterns, classify into:
+   - External APIs (public-facing)
+   - Internal APIs (service-to-service)
+   - System interfaces (OS/hardware)
+   - User interfaces (CLI, GUI)
+   - Data interfaces (files, databases)
+   - Event interfaces (queues, streams)
 
 ### Database Documentation
 - Schema definitions with relationships
@@ -412,6 +594,9 @@ Create these diagrams using Mermaid (GitHub native support - NO PlantUML):
 - SOLID principles adherence score
 - DDD implementation maturity
 - Rich vs Anemic domain model ratio
+- Ontological consistency score
+- Knowledge graph completeness
+- Semantic coherence metrics
 
 ### Architecture Quality Attributes
 - Scalability assessment (horizontal/vertical)
@@ -1173,7 +1358,81 @@ Generate robustness diagrams for:
 - API integration flows
 - Event processing pipelines
 
+6. **Ontology & Knowledge Graphs**
+```mermaid
+graph LR
+    %% Knowledge Graph Representation
+    subgraph "Entities"
+        C[Customer]
+        P[Product]
+        O[Order]
+        I[Invoice]
+        S[Shipment]
+    end
+    
+    subgraph "Relationships"
+        C -->|places| O
+        O -->|contains| P
+        O -->|generates| I
+        O -->|fulfilled_by| S
+        C -->|owns| I
+        S -->|delivers| P
+    end
+    
+    subgraph "Properties"
+        C -.->|name, email, address| CP[Properties]
+        P -.->|sku, price, category| PP[Properties]
+        O -.->|date, status, total| OP[Properties]
+    end
+```
+
+```mermaid
+classDiagram
+    %% Ontological Class Hierarchy
+    class Thing {
+        <<abstract>>
+        +id: UUID
+        +created: DateTime
+    }
+    class Entity {
+        <<abstract>>
+        +name: String
+    }
+    class Event {
+        <<abstract>>
+        +timestamp: DateTime
+        +actor: Entity
+    }
+    class Person {
+        +firstName: String
+        +lastName: String
+    }
+    class Organization {
+        +legalName: String
+        +taxId: String
+    }
+    class Transaction {
+        +amount: Decimal
+        +currency: String
+    }
+    
+    Thing <|-- Entity
+    Thing <|-- Event
+    Entity <|-- Person
+    Entity <|-- Organization
+    Event <|-- Transaction
+    Person <|-- Customer
+    Person <|-- Employee
+    Transaction <|-- Order
+    Transaction <|-- Payment
+```
+
 Generate diagrams for:
+- Domain ontology hierarchies
+- Knowledge graphs with entities and relationships
+- Semantic networks
+- Concept maps
+- Taxonomy trees
 - SOLID principle violations and fixes
 - DDD aggregate boundaries
 - Rich vs Anemic domain models
@@ -1208,18 +1467,20 @@ Perform comprehensive robustness analysis using the ICONIX process:
    Scan the codebase and categorize all classes/modules into:
    
    **Boundary Objects <<boundary>>:**
-   - Web pages and forms
-   - REST API endpoints
-   - GraphQL resolvers
-   - CLI interfaces
-   - Mobile app screens
-   - Desktop GUI windows
-   - WebSocket handlers
-   - File import/export interfaces
-   - Email templates
-   - Report generators
-   - External API clients
-   - Message queue producers/consumers
+   Discover by identifying code that:
+   - Accepts external input (any source)
+   - Produces external output (any destination)
+   - Transforms between external and internal formats
+   - Validates/sanitizes data crossing system boundaries
+   - Implements protocol-specific handling
+   - Common patterns to find:
+     * UI components (web, mobile, desktop, CLI)
+     * Network endpoints (any protocol)
+     * File I/O operations
+     * Message queue interfaces
+     * External service clients
+     * Report/document generators
+     * Inter-process communication points
    
    **Control Objects <<control>>:**
    - Controllers (MVC)
@@ -1382,54 +1643,123 @@ Quick robustness validation checklist:
 
 ## API Documentation Prompts
 
-### 🌐 OpenAPI/Swagger Generation
+### 🌐 Interface Documentation Generation
 
 ```markdown
-Analyze the API endpoints and generate OpenAPI 3.0 specification:
+Discover and document ALL interfaces using a protocol-agnostic approach:
 
-1. **Endpoint Discovery**
-   - Find all route definitions
-   - Extract HTTP methods
-   - Identify path parameters
-   - Detect query parameters
+1. **Interface Discovery Strategy**
+   
+   Scan for interface indicators:
+   - Import statements for communication libraries
+   - Network port bindings
+   - URL/URI path definitions
+   - Message channel subscriptions
+   - Schema definition files
+   - Interface definition files (*.proto, *.thrift, *.idl, *.wsdl, *.graphql)
+   - Serialization/marshaling code
+   - Client factory patterns
+   - Server initialization code
 
-2. **Schema Extraction**
-   - Request body schemas
-   - Response schemas
-   - Error response formats
-   - Common model definitions
+2. **Generic Documentation Generation**
+   
+   For each discovered interface, generate documentation in the native format:
+   
+   ```yaml
+   # Universal Interface Documentation
+   interface_name: [discovered name]
+   type: [auto-detected type]
+   location: [where defined in code]
+   
+   specification:
+     # Use native spec format if standard exists
+     # (OpenAPI for REST, SDL for GraphQL, Proto for gRPC, etc.)
+     # Otherwise use this generic format:
+     
+     operations:
+       - name: [operation/method/endpoint]
+         description: [purpose]
+         communication_pattern: [sync/async, stream/batch]
+         
+         input:
+           format: [json/xml/binary/custom]
+           schema: [inline or reference]
+           validation: [rules]
+           
+         output:
+           format: [json/xml/binary/custom]
+           schema: [inline or reference]
+           error_cases: [list of possible errors]
+           
+         metadata:
+           idempotent: [true/false]
+           cacheable: [true/false]
+           deprecated: [true/false]
+           since_version: [version]
+   ```
 
-3. **Authentication/Security**
-   - Authentication methods
-   - Authorization requirements
-   - API key locations
-   - OAuth flows
+3. **Specification Detection & Generation**
+   
+   Auto-detect and use appropriate specification format:
+   - If REST-like → Generate OpenAPI/Swagger
+   - If GraphQL → Generate SDL
+   - If RPC-style → Generate appropriate IDL
+   - If Message-based → Generate AsyncAPI
+   - If Unknown → Use generic YAML format above
 
-4. **Generate OpenAPI Spec**
-```yaml
-openapi: 3.0.0
-info:
-  title: API Documentation
-  version: 1.0.0
-paths:
-  /api/resource:
-    get:
-      summary: Get resources
-      parameters: []
-      responses:
-        '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                type: array
-```
+4. **Cross-Cutting Concerns Documentation**
+   
+   For ALL interfaces, regardless of type, document:
+   
+   **Behavioral Patterns:**
+   - Request-response cycles
+   - Streaming patterns
+   - Polling/webhook patterns
+   - Batch processing
+   
+   **Data Patterns:**
+   - Pagination strategies
+   - Filtering/sorting
+   - Field selection/projection
+   - Aggregation capabilities
+   
+   **Operational Patterns:**
+   - Health checks
+   - Metrics endpoints
+   - Circuit breaker behavior
+   - Retry policies
+   - Timeout configurations
+   
+   **Evolution Patterns:**
+   - Versioning approach
+   - Deprecation strategy
+   - Migration paths
+   - Compatibility matrix
 
-Include:
-- Request/response examples
-- Error codes and meanings
-- Rate limiting info
-- Webhook specifications
+5. **Interface Testing Documentation**
+   
+   Generate test specifications:
+   ```yaml
+   test_scenarios:
+     - scenario: [happy path]
+       given: [preconditions]
+       when: [action]
+       then: [expected outcome]
+       
+     - scenario: [error case]
+       given: [preconditions]
+       when: [invalid action]
+       then: [error response]
+   ```
+
+6. **Client Generation Hints**
+   
+   Document how to generate/use clients:
+   - Code generation tools available
+   - SDK languages supported
+   - Example client initialization
+   - Common usage patterns
+   - Error handling patterns
 ```
 
 ---
@@ -1553,6 +1883,9 @@ Generate:
 - Ask for TRIZ contradiction identification
 - Request Emergent Design opportunities
 - Specify if you want Clean/Hexagonal architecture assessment
+- **Request ontological model extraction and knowledge graphs**
+- **Ask for semantic consistency analysis**
+- **Require entity relationship inference**
 - **ALWAYS request multi-file documentation with full navigation**
 - **Enforce index.md creation for every documentation directory**
 - **Require TOC, cross-links, and nav headers/footers in all files**
