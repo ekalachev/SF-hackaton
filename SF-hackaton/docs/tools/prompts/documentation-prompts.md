@@ -908,9 +908,9 @@ Include version information:
 
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
-| 1.0.0 | 2024-01-01 | Initial documentation | @author |
-| 1.1.0 | 2024-02-01 | Added API section | @author |
-| 1.2.0 | 2024-03-01 | Updated architecture | @author |
+| 1.0.0 | 2025-01-01 | Initial documentation | @author |
+| 1.1.0 | 2025-02-01 | Added API section | @author |
+| 1.2.0 | 2025-03-01 | Updated architecture | @author |
 
 View [Full Changelog](../CHANGELOG.md)
 ```
