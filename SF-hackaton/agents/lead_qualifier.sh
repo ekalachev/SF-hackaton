@@ -78,7 +78,7 @@ Using HubSpot MCP tools:
 
 2. Update task ID $TASK_ID:
    - Set status to 'COMPLETED'
-   - Add completion note: 'Lead Qualified: $CONTACT_NAME scored $SCORE ($TIER). $REASONING Next: $NEXT_ACTION'
+   - Add completion note: 'Lead Qualified: $CONTACT_NAME scored $SCORE ($TIER). $REASONING $NEXT_ACTION'
 
 Return 'OK' when done.
 " > /dev/null 2>&1

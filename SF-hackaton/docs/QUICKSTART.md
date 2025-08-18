@@ -107,4 +107,4 @@ source agents/hubspot_api_helper.sh && get_contacts
 
 ---
 
-[⬆️ Top](#-quickstart---5-minute-setup) | [📚 Documentation](index.md) | [Next: Manual Setup →](MANUAL-SETUP-GUIDE.md)
+[⬆️ Top](#-quickstart---5-minute-setup) | [📚 Documentation](index.md) | [Manual Setup →](MANUAL-SETUP-GUIDE.md)
