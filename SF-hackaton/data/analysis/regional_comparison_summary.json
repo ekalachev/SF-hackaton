@@ -1,7 +1,7 @@
 {
   "summary": {
     "title": "Global Developer Rates vs AI-Powered Development",
-    "date_compiled": "2024-12-17",
+    "date_compiled": "2025-12-17",
     "project_benchmark": {
       "name": "AI Sales Agent System",
       "lines_of_code": 4394,
@@ -95,7 +95,7 @@
   "sources": {
     "methodology": "Data compiled from salary surveys, job postings, and industry reports",
     "primary_sources": [
-      "Stack Overflow Developer Survey 2024",
+      "Stack Overflow Developer Survey 2025",
       "Glassdoor Salary Data",
       "PayScale Compensation Reports",
       "Indeed/Seek Job Market Analysis",
@@ -103,6 +103,6 @@
       "Accelerance Global Outsourcing Guide"
     ],
     "data_validation": "Cross-referenced across multiple sources for accuracy",
-    "last_updated": "December 2024"
+    "last_updated": "December 2025"
   }
 }

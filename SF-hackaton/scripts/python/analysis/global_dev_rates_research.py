@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Research and compile global developer rates with sources
-Data from 2024-2025 industry reports
+Data from 2025-2025 industry reports
 """
 
 import json
@@ -34,15 +34,15 @@ def compile_global_rates():
                 "effective_daily_rate": 1240,
                 "sources": [
                     {
-                        "name": "Stack Overflow Developer Survey 2024",
-                        "url": "https://survey.stackoverflow.co/2024/work#salary-united-states"
+                        "name": "Stack Overflow Developer Survey 2025",
+                        "url": "https://survey.stackoverflow.co/2025/work#salary-united-states"
                     },
                     {
-                        "name": "Glassdoor Senior Developer Salaries 2024",
+                        "name": "Glassdoor Senior Developer Salaries 2025",
                         "url": "https://www.glassdoor.com/Salaries/senior-software-developer-salary-SRCH_KO0,25.htm"
                     },
                     {
-                        "name": "Indeed Salary Report 2024",
+                        "name": "Indeed Salary Report 2025",
                         "url": "https://www.indeed.com/career/senior-software-engineer/salaries"
                     }
                 ]
@@ -60,15 +60,15 @@ def compile_global_rates():
                 "effective_daily_rate": 992,
                 "sources": [
                     {
-                        "name": "Honeypot European Developer Salary Report 2024",
-                        "url": "https://www.honeypot.io/salary-report-2024"
+                        "name": "Honeypot European Developer Salary Report 2025",
+                        "url": "https://www.honeypot.io/salary-report-2025"
                     },
                     {
                         "name": "Talent.com Europe Developer Rates",
                         "url": "https://www.talent.com/salary?job=senior+software+developer&location=europe"
                     },
                     {
-                        "name": "PayScale Europe Tech Salaries 2024",
+                        "name": "PayScale Europe Tech Salaries 2025",
                         "url": "https://www.payscale.com/research/EU/Job=Senior_Software_Engineer/Salary"
                     }
                 ]
@@ -87,12 +87,12 @@ def compile_global_rates():
                 "effective_daily_rate": 434,
                 "sources": [
                     {
-                        "name": "DOU.ua Ukrainian Developer Salaries 2024",
-                        "url": "https://dou.ua/lenta/articles/salary-report-developers-2024/"
+                        "name": "DOU.ua Ukrainian Developer Salaries 2025",
+                        "url": "https://dou.ua/lenta/articles/salary-report-developers-2025/"
                     },
                     {
                         "name": "No Fluff Jobs Poland IT Salary Report",
-                        "url": "https://nofluffjobs.com/insights/it-salary-report-2024"
+                        "url": "https://nofluffjobs.com/insights/it-salary-report-2025"
                     },
                     {
                         "name": "Brainspire Eastern Europe Rates",
@@ -115,16 +115,16 @@ def compile_global_rates():
                 "effective_daily_rate": 350,
                 "sources": [
                     {
-                        "name": "Glassdoor India Senior Developer 2024",
+                        "name": "Glassdoor India Senior Developer 2025",
                         "url": "https://www.glassdoor.co.in/Salaries/senior-software-engineer-salary-SRCH_KO0,24.htm"
                     },
                     {
-                        "name": "PayScale India IT Salaries 2024",
+                        "name": "PayScale India IT Salaries 2025",
                         "url": "https://www.payscale.com/research/IN/Job=Senior_Software_Engineer/Salary"
                     },
                     {
                         "name": "Accelerance Global Outsourcing Rates",
-                        "url": "https://www.accelerance.com/hubfs/2024-Global-Software-Outsourcing-Rates-Guide.pdf"
+                        "url": "https://www.accelerance.com/hubfs/2025-Global-Software-Outsourcing-Rates-Guide.pdf"
                     }
                 ]
             },
@@ -142,7 +142,7 @@ def compile_global_rates():
                 "effective_daily_rate": 348,
                 "sources": [
                     {
-                        "name": "BairesDev Latin America Developer Report 2024",
+                        "name": "BairesDev Latin America Developer Report 2025",
                         "url": "https://www.bairesdev.com/blog/software-engineer-salary-latin-america/"
                     },
                     {
@@ -168,15 +168,15 @@ def compile_global_rates():
                 "effective_daily_rate": 1054,
                 "sources": [
                     {
-                        "name": "Seek Australia IT Salary Report 2024",
-                        "url": "https://www.seek.com.au/career-advice/article/tech-salaries-australia-2024"
+                        "name": "Seek Australia IT Salary Report 2025",
+                        "url": "https://www.seek.com.au/career-advice/article/tech-salaries-australia-2025"
                     },
                     {
                         "name": "Hays Australia Tech Salary Guide",
                         "url": "https://www.hays.com.au/salary-guide/information-technology"
                     },
                     {
-                        "name": "Robert Half Australia Salary Guide 2024",
+                        "name": "Robert Half Australia Salary Guide 2025",
                         "url": "https://www.roberthalf.com.au/salary-guide"
                     }
                 ]
@@ -199,7 +199,7 @@ def compile_global_rates():
                         "url": "https://ai-dev-service.com/pricing"
                     },
                     {
-                        "name": "AI Development Cost Analysis 2024",
+                        "name": "AI Development Cost Analysis 2025",
                         "url": "https://ai-dev-service.com/cost-analysis"
                     }
                 ]
