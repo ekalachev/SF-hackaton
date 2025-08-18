@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md) | [📚 Documentation](../index.md) | [🏗️ Architecture](index.md) | [← Previous: Technical Decisions](TECHNICAL_DECISIONS.md)
+[🏠 Home](../../README.md) | [📚 Documentation](../index.md) | [🏗️ Architecture](index.md) | [← Technical Decisions](TECHNICAL_DECISIONS.md)
 
 ---
 
@@ -587,4 +587,4 @@ The elegance lies not in complexity, but in the sophisticated simplicity of well
 
 ---
 
-[⬆️ Top](#component-interaction-architecture) | [🏗️ Architecture Home](index.md) | [← Previous: Technical Decisions](TECHNICAL_DECISIONS.md)
+[⬆️ Top](#component-interaction-architecture) | [🏗️ Architecture Home](index.md) | [← Technical Decisions](TECHNICAL_DECISIONS.md)

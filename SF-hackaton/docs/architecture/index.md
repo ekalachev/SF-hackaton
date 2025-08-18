@@ -165,4 +165,4 @@ MIT License - See [LICENSE](../../LICENSE) for details
 
 ---
 
-[🏠 Home](../../README.md) | [📚 Documentation](../index.md) | [Next: System Architecture →](SYSTEM_ARCHITECTURE.md)
+[🏠 Home](../../README.md) | [📚 Documentation](../index.md) | [System Architecture →](SYSTEM_ARCHITECTURE.md)

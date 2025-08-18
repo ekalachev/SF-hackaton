@@ -704,4 +704,4 @@ The success of this architecture proves that the future of software development 
 
 ---
 
-[⬆️ Top](#system-architecture-documentation) | [🏗️ Architecture Home](index.md) | [Next: Technical Decisions →](TECHNICAL_DECISIONS.md)
+[⬆️ Top](#system-architecture-documentation) | [🏗️ Architecture Home](index.md) | [Technical Decisions →](TECHNICAL_DECISIONS.md)

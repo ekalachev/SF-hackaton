@@ -1,4 +1,4 @@
-[🏠 Home](../../README.md) | [📚 Documentation](../index.md) | [🏗️ Architecture](index.md) | [← Previous: System Architecture](SYSTEM_ARCHITECTURE.md)
+[🏠 Home](../../README.md) | [📚 Documentation](../index.md) | [🏗️ Architecture](index.md) | [← System Architecture](SYSTEM_ARCHITECTURE.md)
 
 ---
 
@@ -527,4 +527,4 @@ It's a manifesto for the future of software development.
 
 ---
 
-[⬆️ Top](#technical-architecture-decisions) | [🏗️ Architecture Home](index.md) | [← Previous: System Architecture](SYSTEM_ARCHITECTURE.md) | [Next: Component Interactions →](COMPONENT_INTERACTIONS.md)
+[⬆️ Top](#technical-architecture-decisions) | [🏗️ Architecture Home](index.md) | [← System Architecture](SYSTEM_ARCHITECTURE.md) | [Component Interactions →](COMPONENT_INTERACTIONS.md)

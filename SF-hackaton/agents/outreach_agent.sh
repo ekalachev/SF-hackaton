@@ -104,7 +104,7 @@ Using HubSpot MCP tools:
 2. Update contact ID $CONTACT_IDS:
    - last_outreach_date: $(date -u +%Y-%m-%dT%H:%M:%SZ)
    - outreach_status: 'CONTACTED'
-   - next_follow_up: $(date -u -v+${FOLLOW_UP_DAYS}d +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -d "+${FOLLOW_UP_DAYS} days" +%Y-%m-%dT%H:%M:%SZ)
+   - next_follow_$(date -u -v+${FOLLOW_UP_DAYS}d +%Y-%m-%dT%H:%M:%SZ 2>/dev/null || date -u -d "+${FOLLOW_UP_DAYS} days" +%Y-%m-%dT%H:%M:%SZ)
 
 3. Update task ID $TASK_ID:
    - Set status to 'COMPLETED'
@@ -139,4 +139,4 @@ fi
 echo "$(date): Outreach completed for task $TASK_ID" >> "$LOG_FILE"
 
 # Log success metrics
-echo "$(date): SUCCESS - Contact: $CONTACT_NAME, Company: $COMPANY_NAME, Priority: $PRIORITY, Follow-up: ${FOLLOW_UP_DAYS} days" >> "$LOG_FILE"
+echo "$(date): SUCCESS - Contact: $CONTACT_NAME, Company: $COMPANY_NAME, Priority: $PRIORITY, Follow-${FOLLOW_UP_DAYS} days" >> "$LOG_FILE"

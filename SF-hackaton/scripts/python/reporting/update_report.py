@@ -155,7 +155,7 @@ def main():
     
     report.append("### Annual Projection (10 similar projects):")
     report.append(f"- Total Savings: ${savings * 10:,.0f}")
-    report.append(f"- Time Freed Up: {data['comparison']['time_saved_days'] * 10:.0f} days")
+    report.append(f"- Time Freed {data['comparison']['time_saved_days'] * 10:.0f} days")
     report.append(f"- Additional Projects Possible: {int(data['comparison']['time_saved_days'] * 10 / data['human_estimation']['average_days'])} extra projects/year")
     report.append("")
     
