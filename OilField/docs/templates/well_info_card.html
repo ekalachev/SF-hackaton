@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well Information Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #e8eaf6 0%, #f3e5f5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card-container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .card-label {
+            color: #9e9e9e;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .well-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .well-icon {
+            font-size: 28px;
+        }
+
+        .well-info {
+            flex: 1;
+        }
+
+        .well-id {
+            font-size: 20px;
+            font-weight: 500;
+            color: #424242;
+            margin-bottom: 6px;
+        }
+
+        .operator {
+            font-size: 16px;
+            color: #757575;
+        }
+
+        .section {
+            padding: 24px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #424242;
+            margin-bottom: 16px;
+        }
+
+        .section-icon {
+            font-size: 20px;
+        }
+
+        .chart-subtitle {
+            font-size: 14px;
+            color: #9e9e9e;
+            margin-top: 4px;
+        }
+
+        .score-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .score-bar {
+            flex: 1;
+            height: 32px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .score-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e3f2fd 0%, #90caf9 100%);
+            width: 84%;
+            position: relative;
+        }
+
+        .score-pattern {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 30px;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 0, 0, 0.05) 2px,
+                rgba(0, 0, 0, 0.05) 4px
+            );
+        }
+
+        .score-text {
+            font-size: 20px;
+            font-weight: 600;
+            color: #424242;
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .recommendation {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .metrics-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .metric-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+
+        .metric-label {
+            color: #616161;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .metric-value {
+            font-weight: 500;
+            color: #424242;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .badge-warning {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .badge-success {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-item {
+            font-size: 15px;
+            color: #616161;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .status-icon {
+            font-size: 16px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px 24px;
+            border-radius: 16px;
+            border: none;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #5b6cf5;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #4a5de5;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(91, 108, 245, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #616161;
+        }
+
+        .btn-secondary:hover {
+            background: #eeeeee;
+        }
+
+        .warning-icon {
+            color: #f57c00;
+        }
+
+        .success-icon {
+            color: #43a047;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-label">Project Card</div>
+        
+        <div class="card">
+            <div class="well-header">
+                <div class="well-icon">🛢️</div>
+                <div class="well-info">
+                    <div class="well-id">WELL ID: TX-12345-ABC</div>
+                    <div class="operator">Operator: Pytheas Energy</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">📊</span>
+                    Production Chart
+                </div>
+                <div class="chart-subtitle">5-year decline curve visualization</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">🎯</span>
+                    AI Acquisition Score
+                </div>
+                <div class="score-container">
+                    <div class="score-bar">
+                        <div class="score-fill">
+                            <div class="score-pattern"></div>
+                        </div>
+                    </div>
+                    <div class="score-text">84/100</div>
+                </div>
+                <div class="recommendation">"Strong Buy" recommendation</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">🌍</span>
+                    ESG Metrics
+                </div>
+                <div class="metrics-row">
+                    <div class="metric-item">
+                        <span class="metric-label">Carbon Intensity</span>
+                        <span class="metric-value">
+                            <span class="warning-icon">⚠️</span>
+                            <span class="badge badge-warning">Medium</span>
+                        </span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">Compliance</span>
+                        <span class="metric-value">
+                            <span class="success-icon">✓</span>
+                            <span class="badge badge-success">Verified</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <span class="section-icon">🔗</span>
+                    Blockchain Status
+                </div>
+                <div class="status-item">
+                    <span class="success-icon status-icon">✓</span>
+                    Data Verified by Chainlink Oracle
+                </div>
+                <div class="status-item">
+                    <span style="color: #9e9e9e;">Digital Twin: Not Minted</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-secondary">View Full Report</button>
+                <button class="btn btn-primary">Mint Twin NFT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

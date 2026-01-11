@@ -1,0 +1,335 @@
+================================================================================
+                   OILFIELD DATABASE SCHEMA - ALL TABLES
+================================================================================
+
+TABLE 1: operators
+================================================================================
+Purpose: Store oil & gas company/entity data operating the wells
+
+Columns:
+├── id: UUID (PRIMARY KEY) - Default: gen_random_uuid()
+├── name: TEXT (NOT NULL, UNIQUE) - Company/operator name
+├── operator_number: TEXT (nullable) - Regulatory identifier
+├── address: TEXT (nullable) - Physical address
+├── created_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+└── updated_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+
+Indexes:
+  - id (PRIMARY KEY)
+  - name (UNIQUE)
+
+Triggers:
+  - operators_updated_at_trigger (updates updated_at on UPDATE)
+
+Foreign Keys:
+  (none - this is referenced by wells)
+
+Relationships:
+  - ONE-TO-MANY: operators -> wells (via wells.operator_id)
+
+Sample Query:
+  SELECT * FROM operators WHERE name = 'Exxon Mobil';
+
+
+TABLE 2: wells
+================================================================================
+Purpose: Central table for oil well records (core entity of the system)
+
+Columns:
+├── id: UUID (PRIMARY KEY) - Default: gen_random_uuid()
+├── well_id: TEXT (NOT NULL, UNIQUE) - Source system identifier
+├── well_name: TEXT (NOT NULL) - Human-readable name
+├── api_number: TEXT (UNIQUE, nullable) - API number (oil & gas standard)
+├── operator_id: UUID (FK -> operators.id, nullable) - Operating company
+│                ON DELETE SET NULL
+├── latitude: DECIMAL(10,8) (nullable) - Decimal degrees
+├── longitude: DECIMAL(11,8) (nullable) - Decimal degrees
+├── county: TEXT (nullable) - County name
+├── field: TEXT (nullable) - Oil/gas field name
+├── state: TEXT (NOT NULL, DEFAULT 'TX') - State code
+├── status: TEXT (NOT NULL, DEFAULT 'active') - active, plugged, depleted
+├── depth_ft: INTEGER (nullable) - Total depth in feet
+├── completion_date: DATE (nullable) - Well completion date
+├── embedding: VECTOR(384) (nullable) - 384D semantic embedding
+├── embedding_model: TEXT (NOT NULL, DEFAULT 'all-MiniLM-L6-v2')
+├── description: TEXT (nullable) - Well description/notes
+├── created_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+└── updated_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+
+Indexes:
+  - id (PRIMARY KEY)
+  - well_id (UNIQUE)
+  - api_number (UNIQUE)
+  - operator_id (for FK lookups)
+  - status (for filtering)
+  - county (for geographic filtering)
+  - embedding (HNSW index, vector_cosine_ops) - for semantic search
+
+Triggers:
+  - wells_updated_at_trigger (updates updated_at on UPDATE)
+
+Foreign Keys:
+  - operator_id -> operators.id (ON DELETE SET NULL)
+
+Relationships:
+  - MANY-TO-ONE: wells -> operators
+  - ONE-TO-MANY: wells -> production_history
+  - ONE-TO-ONE: wells -> valuations
+  - ONE-TO-MANY: wells -> well_narratives
+
+Sample Queries:
+  SELECT * FROM wells WHERE state = 'TX' AND status = 'active';
+  SELECT * FROM wells WHERE county = 'Harris' ORDER BY depth_ft DESC;
+
+
+TABLE 3: production_history
+================================================================================
+Purpose: Time-series production data for each well (can have thousands of rows)
+
+Columns:
+├── id: UUID (PRIMARY KEY) - Default: gen_random_uuid()
+├── well_id: UUID (FK -> wells.id, NOT NULL) - Reference to well
+│             ON DELETE CASCADE
+├── date: DATE (NOT NULL) - Production date (month/year)
+├── oil_bbl: DECIMAL(12,2) (nullable) - Barrels of oil produced
+├── gas_mcf: DECIMAL(12,2) (nullable) - Thousand cubic feet of gas
+├── water_bbl: DECIMAL(12,2) (nullable) - Barrels of water produced
+├── created_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+└── updated_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+
+Constraints:
+  - UNIQUE(well_id, date) - One record per date per well
+
+Indexes:
+  - id (PRIMARY KEY)
+  - (well_id, date DESC) - Composite index for range queries
+
+Triggers:
+  - production_history_updated_at_trigger (updates updated_at)
+
+Foreign Keys:
+  - well_id -> wells.id (ON DELETE CASCADE)
+
+Relationships:
+  - MANY-TO-ONE: production_history -> wells
+
+Sample Queries:
+  SELECT * FROM production_history 
+  WHERE well_id = '123-uuid' 
+  ORDER BY date DESC LIMIT 12;
+  
+  SELECT date, oil_bbl, gas_mcf 
+  FROM production_history 
+  WHERE well_id = '123-uuid' AND date BETWEEN '2023-01-01' AND '2023-12-31';
+
+
+TABLE 4: valuations
+================================================================================
+Purpose: Valuation metrics and economic assumptions for investment analysis
+
+Columns:
+├── id: UUID (PRIMARY KEY) - Default: gen_random_uuid()
+├── well_id: UUID (FK -> wells.id, NOT NULL, UNIQUE) - Reference to well
+│             ON DELETE CASCADE
+├── npv_usd: DECIMAL(15,2) (nullable) - Net Present Value
+├── market_value_usd: DECIMAL(15,2) (nullable) - Market valuation
+├── discount_pct: DECIMAL(5,2) (nullable) - Discount percentage (0-999.99%)
+├── confidence: DECIMAL(3,2) (nullable) - Confidence level (0.00-9.99)
+├── remaining_reserves_bbl: DECIMAL(15,2) (nullable) - Barrels remaining
+├── calculated_at: TIMESTAMP WITH TZ (nullable) - When valuation was run
+├── oil_price_usd: DECIMAL(8,2) (DEFAULT 75.00) - Assumption: $/barrel
+├── operating_cost_per_bbl: DECIMAL(8,2) (DEFAULT 15.00) - $/barrel
+├── discount_rate: DECIMAL(5,4) (DEFAULT 0.1000) - 10% default
+├── royalty_rate: DECIMAL(5,4) (DEFAULT 0.2000) - 20% default
+├── valuation_date: DATE (DEFAULT NOW()) - Date of valuation
+├── created_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+└── updated_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+
+Indexes:
+  - id (PRIMARY KEY)
+  - well_id (UNIQUE) - One valuation per well
+
+Triggers:
+  - valuations_updated_at_trigger (updates updated_at)
+
+Foreign Keys:
+  - well_id -> wells.id (ON DELETE CASCADE)
+
+Relationships:
+  - ONE-TO-ONE: valuations -> wells
+
+Sample Queries:
+  SELECT w.well_name, v.npv_usd, v.market_value_usd 
+  FROM wells w 
+  JOIN valuations v ON w.id = v.well_id 
+  WHERE v.discount_pct > 30 
+  ORDER BY v.npv_usd DESC;
+
+
+TABLE 5: well_narratives
+================================================================================
+Purpose: Cache AI-generated well descriptions to avoid repeated API calls
+         Added in Sprint 4 (November 1, 2025)
+
+Columns:
+├── id: UUID (PRIMARY KEY) - Default: gen_random_uuid()
+├── well_id: UUID (FK -> wells.id, NOT NULL) - Reference to well
+│             ON DELETE CASCADE
+├── narrative: TEXT (NOT NULL) - AI-generated description/report
+├── created_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+└── updated_at: TIMESTAMP WITH TZ (DEFAULT: NOW())
+
+Indexes:
+  - id (PRIMARY KEY)
+  - well_id (for lookup)
+  - created_at (for sorting by creation time)
+
+Triggers:
+  - well_narratives_updated_at_trigger (updates updated_at)
+
+Foreign Keys:
+  - well_id -> wells.id (ON DELETE CASCADE)
+
+Relationships:
+  - MANY-TO-ONE: well_narratives -> wells
+
+Sample Queries:
+  SELECT narrative FROM well_narratives 
+  WHERE well_id = '123-uuid' 
+  ORDER BY created_at DESC LIMIT 1;
+
+
+================================================================================
+                            SUMMARY TABLE
+================================================================================
+
+Table Name          Rows Est.   Purpose                    PK      Relationships
+─────────────────────────────────────────────────────────────────────────────
+operators           100-1K      Company/operator data      UUID    1->many wells
+wells               1K-10K      Oil well records           UUID    many ops, 1 valuation
+production_history  100K-1M     Time-series production     UUID    many->1 well
+valuations          1K-10K      Well valuations            UUID    1->1 well
+well_narratives     1K-10K      AI-cached narratives       UUID    many->1 well
+
+Key Statistics:
+  - Total Tables: 5
+  - Foreign Keys: 5
+  - Unique Constraints: 7
+  - Standard Indexes: 9
+  - Vector Indexes: 1 (HNSW on embeddings)
+  - Triggers: 5 (one per table for timestamp updates)
+  - Cascade Delete Relationships: 4
+
+
+================================================================================
+                        CONSTRAINT SUMMARY
+================================================================================
+
+UNIQUE Constraints:
+  ├── operators.name
+  ├── wells.well_id
+  ├── wells.api_number
+  ├── valuations.well_id
+  └── production_history(well_id, date) COMPOSITE
+
+FOREIGN KEY Constraints:
+  ├── wells.operator_id -> operators.id (ON DELETE SET NULL)
+  ├── production_history.well_id -> wells.id (ON DELETE CASCADE)
+  ├── valuations.well_id -> wells.id (ON DELETE CASCADE)
+  └── well_narratives.well_id -> wells.id (ON DELETE CASCADE)
+
+NOT NULL Constraints (33 total across all tables)
+
+DEFAULT Values (12 total):
+  ├── wells.state = 'TX'
+  ├── wells.status = 'active'
+  ├── wells.embedding_model = 'all-MiniLM-L6-v2'
+  ├── valuations.oil_price_usd = 75.00
+  ├── valuations.operating_cost_per_bbl = 15.00
+  ├── valuations.discount_rate = 0.1000
+  ├── valuations.royalty_rate = 0.2000
+  ├── valuations.valuation_date = NOW()
+  ├── (all created_at = NOW())
+  └── (all updated_at = NOW())
+
+
+================================================================================
+                     FIELD TYPES REFERENCE
+================================================================================
+
+UUID:                 gen_random_uuid() - 16-byte unique identifier
+TEXT:                 Unbounded variable-length text
+DATE:                 Calendar date (YYYY-MM-DD)
+TIMESTAMP WITH TZ:    ISO 8601 datetime with timezone
+INTEGER:              32-bit integer (-2B to +2B range)
+DECIMAL(P,S):         Fixed-point decimal (P=precision, S=scale)
+VECTOR(384):          pgvector type - 384-dimensional float vector
+
+DECIMAL Precision Examples:
+  DECIMAL(15,2)  = 13 digits before decimal, 2 after = $999,999,999,999.99
+  DECIMAL(12,2)  = 10 digits before decimal, 2 after = 9,999,999,999.99
+  DECIMAL(5,2)   = 3 digits before decimal, 2 after = 999.99%
+  DECIMAL(5,4)   = 1 digit before decimal, 4 after = 9.9999 (rates/ratios)
+  DECIMAL(8,2)   = 6 digits before decimal, 2 after = 999,999.99
+
+
+================================================================================
+                      PERFORMANCE FEATURES
+================================================================================
+
+Indexing Strategy:
+  ├── Primary Keys: Implicit on all id columns
+  ├── Foreign Keys: Explicit index on operator_id, well_id FK columns
+  ├── Filters: Index on status, county for WHERE clauses
+  ├── Sorts: Index on (well_id, date DESC) for time-range queries
+  ├── Vectors: HNSW index on embedding for semantic search
+  └── Time-based: Index on well_narratives.created_at
+
+Query Optimization:
+  ├── Unique constraints on identifiers prevent duplicates
+  ├── Composite unique on (well_id, date) prevents duplicate production records
+  ├── HNSW vector index: sub-10ms similarity search on 1000+ wells
+  ├── Foreign key index on wells.operator_id: fast joins with operators
+  └── (well_id, date) index: fast range queries for production history
+
+Estimated Query Times (with current indexes):
+  ├── Single row lookup: <1ms
+  ├── Range query (100 rows): <10ms
+  ├── Vector similarity (top 10): ~10ms
+  ├── County filter: <50ms
+  ├── Complex join (well + operator + valuation): 10-50ms
+
+
+================================================================================
+                        CASCADING BEHAVIOR
+================================================================================
+
+When you DELETE an operator:
+  └─ wells.operator_id is SET TO NULL (well data preserved)
+
+When you DELETE a well:
+  ├─ production_history records are DELETED (CASCADE)
+  ├─ valuations record is DELETED (CASCADE)
+  └─ well_narratives records are DELETED (CASCADE)
+
+When you DELETE production_history or valuation:
+  └─ Nothing cascades (leaf nodes)
+
+
+================================================================================
+                     MIGRATION TIMELINE
+================================================================================
+
+Migration 1: 001_initial_schema.ts (Oct 31, 2024)
+  └─ Created: operators, wells, production_history, valuations
+     Enabled: pgvector extension
+     Setup: Triggers, Indexes, HNSW vector index
+
+Migration 2: 20251101070508_add_well_narratives_table.ts (Nov 1, 2025)
+  └─ Created: well_narratives table (Sprint 4 AI features)
+
+Migration 3: 20251101070630_add_valuation_economic_fields.ts (Nov 1, 2025)
+  └─ Added to valuations: oil_price_usd, operating_cost_per_bbl,
+                          discount_rate, royalty_rate, valuation_date
+
+================================================================================

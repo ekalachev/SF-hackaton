@@ -2,7 +2,7 @@
 
 ## Repository Structure
 ```
-/Users/alexanderfedin/Projects/hackathons/SF-hackaton/
+~/Projects/hackathons/SF-hackaton/
 ├── README.md           # Main hackathon information and event details
 └── CLAUDE.md          # This file - development guidelines and project context
 ```
@@ -12,7 +12,7 @@ This repository is for the **AI Hackathon: Corp-Agent Vibe Coding** event on Aug
 
 ## Key Information
 - **Event Details:** See [README.md](./README.md) for complete hackathon information
-- **Working Directory:** `/Users/alexanderfedin/Projects/hackathons/SF-hackaton/`
+- **Working Directory:** `~/Projects/hackathons/SF-hackaton/`
 - **Challenge Focus:** AI-powered sales automation tools with HubSpot integration
 
 ## Development Guidelines
@@ -49,7 +49,7 @@ SF-hackaton/
 ### Commands to Run
 ```bash
 # Navigate to project directory
-cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton/
+cd ~/Projects/hackathons/SF-hackaton/
 
 # Initialize git (if needed)
 git init
@@ -104,7 +104,7 @@ python app.py
 - **Main Documentation:** [README.md](./README.md)
 - **Event Registration:** https://lu.ma/8clf1otc
 - **HubSpot API:** https://developers.hubspot.com/docs/api/overview
-- **Repository Path:** `/Users/alexanderfedin/Projects/hackathons/SF-hackaton/`
+- **Repository Path:** `~/Projects/hackathons/SF-hackaton/`
 
 ## Notes for Future Development
 - This hackathon focuses on practical AI applications in sales

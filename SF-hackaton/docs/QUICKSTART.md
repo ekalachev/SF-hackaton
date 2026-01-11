@@ -34,7 +34,7 @@ brew install git-flow  # Mac only
 
 ### 3️⃣ Run Setup (30 seconds)
 ```bash
-cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton
+cd ~/Projects/hackathons/SF-hackaton
 chmod +x *.sh agents/*.sh
 ./setup.sh
 ```

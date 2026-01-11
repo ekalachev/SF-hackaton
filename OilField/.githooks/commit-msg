@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Commit message hook to enforce conventional commits
+# Part of git flow enforcement
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+# Get branch name
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+
+# Skip check for merge commits
+if grep -q "^Merge" "$COMMIT_MSG_FILE"; then
+    exit 0
+fi
+
+# Skip check for git flow finish commits
+if grep -q "^Merge branch '\(feature\|release\|hotfix\)" "$COMMIT_MSG_FILE"; then
+    exit 0
+fi
+
+# Check if commit message is empty (excluding comments)
+ACTUAL_MSG=$(grep -v "^#" "$COMMIT_MSG_FILE" | grep -v "^$")
+if [ -z "$ACTUAL_MSG" ]; then
+    echo "❌ ERROR: Commit message cannot be empty"
+    exit 1
+fi
+
+# Validate commit message format (relaxed for git flow branches)
+# Allow multiline messages, just check the first line isn't too short
+FIRST_LINE=$(echo "$COMMIT_MSG" | head -n 1)
+if [ ${#FIRST_LINE} -lt 10 ]; then
+    echo "❌ ERROR: Commit message too short (minimum 10 characters)"
+    echo "   Your message: '$FIRST_LINE'"
+    exit 1
+fi
+
+echo "✅ Commit message validated"
+exit 0

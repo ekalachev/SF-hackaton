@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Prepare commit message hook to add branch info
+# Part of git flow enforcement
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+# Only add branch info for regular commits (not merge, squash, etc.)
+if [ -z "$COMMIT_SOURCE" ]; then
+    BRANCH_NAME=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+    # Extract ticket/issue number from branch name if it exists
+    if [[ $BRANCH_NAME =~ ^(feature|bugfix|hotfix)/([A-Z]+-[0-9]+) ]]; then
+        TICKET="${BASH_REMATCH[2]}"
+
+        # Check if ticket is not already in commit message
+        if ! grep -q "$TICKET" "$COMMIT_MSG_FILE"; then
+            # Prepend ticket to commit message
+            ORIGINAL_MSG=$(cat "$COMMIT_MSG_FILE")
+            echo "[$TICKET] $ORIGINAL_MSG" > "$COMMIT_MSG_FILE"
+        fi
+    fi
+fi

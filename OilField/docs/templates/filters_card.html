@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #e8eaf6 0%, #f3e5f5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card-container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .card-label {
+            color: #9e9e9e;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #424242;
+            margin-bottom: 28px;
+        }
+
+        .header-icon {
+            font-size: 24px;
+            color: #9e9e9e;
+        }
+
+        .filter-section {
+            margin-bottom: 32px;
+        }
+
+        .filter-section:last-of-type {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #616161;
+            margin-bottom: 16px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            padding: 8px;
+            border-radius: 12px;
+        }
+
+        .checkbox-item:hover {
+            background: #f5f5f5;
+        }
+
+        .checkbox {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #d0d0d0;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + .checkbox {
+            background: #5b6cf5;
+            border-color: #5b6cf5;
+        }
+
+        .checkbox-item input[type="checkbox"]:checked + .checkbox::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .checkbox-label {
+            font-size: 15px;
+            color: #424242;
+            flex: 1;
+        }
+
+        .slider-container {
+            padding: 16px 0;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .slider-visual {
+            font-family: monospace;
+            font-size: 14px;
+            color: #9e9e9e;
+        }
+
+        .range-input {
+            width: 100%;
+            height: 8px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #5b6cf5 0%, #5b6cf5 50%, #e0e0e0 50%, #e0e0e0 100%);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .range-input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #5b6cf5;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(91, 108, 245, 0.4);
+        }
+
+        .range-input::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #5b6cf5;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 8px rgba(91, 108, 245, 0.4);
+        }
+
+        .dropdown {
+            width: 100%;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 16px;
+            background: #f5f5f7;
+            font-size: 15px;
+            color: #424242;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23616161' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+            transition: all 0.2s;
+        }
+
+        .dropdown:hover {
+            background: #eeeeee;
+        }
+
+        .location-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: #f5f5f7;
+            border-radius: 14px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .location-item:hover {
+            background: #eeeeee;
+            transform: translateX(4px);
+        }
+
+        .location-icon {
+            font-size: 20px;
+        }
+
+        .location-name {
+            font-size: 15px;
+            color: #424242;
+            font-weight: 500;
+        }
+
+        .location-count {
+            margin-left: auto;
+            font-size: 14px;
+            color: #9e9e9e;
+            background: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 16px;
+            background: #f5f5f7;
+            font-size: 15px;
+            color: #424242;
+            transition: all 0.2s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            background: #eeeeee;
+            box-shadow: 0 0 0 3px rgba(91, 108, 245, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: #9e9e9e;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px 24px;
+            border-radius: 16px;
+            border: none;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #616161;
+        }
+
+        .btn-secondary:hover {
+            background: #eeeeee;
+        }
+
+        .btn-primary {
+            background: #5b6cf5;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #4a5de5;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(91, 108, 245, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-label">Filter Panel</div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="header-icon">🔍</span>
+                Filters
+            </div>
+
+            <div class="filter-section">
+                <div class="section-title">Production Status</div>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox" checked>
+                        <div class="checkbox"></div>
+                        <span class="checkbox-label">High</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" checked>
+                        <div class="checkbox"></div>
+                        <span class="checkbox-label">Moderate</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" checked>
+                        <div class="checkbox"></div>
+                        <span class="checkbox-label">Declining</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <div class="checkbox"></div>
+                        <span class="checkbox-label">Critical</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox">
+                        <div class="checkbox"></div>
+                        <span class="checkbox-label">Inactive</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="section-title">AI Score Range</div>
+                <div class="slider-container">
+                    <div class="slider-header">
+                        <span class="slider-visual">[====|==========]</span>
+                        <span style="font-size: 14px; color: #424242; font-weight: 500;">50-100</span>
+                    </div>
+                    <input type="range" class="range-input" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="section-title">ESG Rating</div>
+                <select class="dropdown">
+                    <option>All Ratings</option>
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                </select>
+            </div>
+
+            <div class="filter-section">
+                <div class="section-title">Location</div>
+                <div class="location-group">
+                    <div class="location-item">
+                        <span class="location-icon">🗺️</span>
+                        <span class="location-name">Texas</span>
+                        <span class="location-count">1,234</span>
+                    </div>
+                    <div class="location-item">
+                        <span class="location-icon">🗺️</span>
+                        <span class="location-name">New Mexico</span>
+                        <span class="location-count">456</span>
+                    </div>
+                    <div class="location-item">
+                        <span class="location-icon">🗺️</span>
+                        <span class="location-name">Oklahoma</span>
+                        <span class="location-count">789</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="section-title">Operator</div>
+                <input type="text" class="search-input" placeholder="Search operators...">
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-secondary">Reset All</button>
+                <button class="btn btn-primary">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add interactivity for checkboxes
+        document.querySelectorAll('.checkbox-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (e.target.tagName !== 'INPUT') {
+                    const checkbox = this.querySelector('input[type="checkbox"]');
+                    checkbox.checked = !checkbox.checked;
+                }
+            });
+        });
+
+        // Update slider visual
+        const rangeInput = document.querySelector('.range-input');
+        const sliderVisual = document.querySelector('.slider-visual');
+        const sliderValue = document.querySelector('.slider-header span:last-child');
+        
+        rangeInput.addEventListener('input', function() {
+            const value = this.value;
+            const percentage = value / 100;
+            this.style.background = `linear-gradient(90deg, #5b6cf5 0%, #5b6cf5 ${percentage * 100}%, #e0e0e0 ${percentage * 100}%, #e0e0e0 100%)`;
+            sliderValue.textContent = `${value}-100`;
+            
+            // Update visual representation
+            const bars = Math.round(percentage * 14);
+            const emptyBars = 14 - bars;
+            sliderVisual.textContent = `[${'='.repeat(bars)}|${'='.repeat(emptyBars)}]`;
+        });
+    </script>
+</body>
+</html>

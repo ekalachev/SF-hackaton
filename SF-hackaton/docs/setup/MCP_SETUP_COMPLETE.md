@@ -3,7 +3,7 @@
 ## What's Configured
 
 ### 1. Project-Level MCP Configuration (`.mcp.json`)
-Located at: `/Users/alexanderfedin/Projects/hackathons/SF-hackaton/.mcp.json`
+Located at: `~/Projects/hackathons/SF-hackaton/.mcp.json`
 
 **Servers configured:**
 - ✅ **Puppeteer** - Web automation and scraping
@@ -26,14 +26,14 @@ Located at: `/Users/alexanderfedin/Projects/hackathons/SF-hackaton/.mcp.json`
 
 **Option 1: From Project Directory (Recommended)**
 ```bash
-cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton
+cd ~/Projects/hackathons/SF-hackaton
 claude
 ```
 When prompted, approve both servers by typing `y` for each.
 
 **Option 2: With Explicit Config**
 ```bash
-claude --mcp-config /Users/alexanderfedin/Projects/hackathons/SF-hackaton/.mcp.json
+claude --mcp-config ~/Projects/hackathons/SF-hackaton/.mcp.json
 ```
 
 ### Test MCP Servers

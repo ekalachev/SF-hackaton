@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #e8eaf6 0%, #f3e5f5 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #424242;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #424242;
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .header-icon {
+            font-size: 28px;
+        }
+
+        .leaderboard-item {
+            padding: 24px;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .leaderboard-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            border-color: #5b6cf5;
+        }
+
+        .leaderboard-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-rank-1 {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff4d9 100%);
+        }
+
+        .item-rank-2 {
+            background: linear-gradient(135deg, #f5f5f5 0%, #eeeeee 100%);
+        }
+
+        .item-rank-3 {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe8cc 100%);
+        }
+
+        .item-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .rank-badge {
+            font-size: 24px;
+            font-weight: 700;
+            color: #616161;
+            min-width: 48px;
+        }
+
+        .rank-1 {
+            color: #f9a825;
+        }
+
+        .rank-2 {
+            color: #757575;
+        }
+
+        .rank-3 {
+            color: #d84315;
+        }
+
+        .well-id {
+            font-size: 20px;
+            font-weight: 600;
+            color: #424242;
+        }
+
+        .score-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .score-label {
+            font-size: 14px;
+            color: #757575;
+            font-weight: 500;
+        }
+
+        .score-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #5b6cf5;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+
+        .badge-trending {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .badge-new {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .item-details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .basin-name {
+            font-size: 16px;
+            color: #616161;
+        }
+
+        .divider {
+            color: #bdbdbd;
+            margin: 0 8px;
+        }
+
+        .value-amount {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2e7d32;
+        }
+
+        .view-details-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #f5f5f7;
+            color: #5b6cf5;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .view-details-btn:hover {
+            background: #5b6cf5;
+            color: white;
+            border-color: #5b6cf5;
+            transform: translateX(4px);
+        }
+
+        @media (max-width: 640px) {
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .score-container {
+                margin-left: 0;
+            }
+
+            .status-badge {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">4. Leaderboard Panel</h1>
+        
+        <div class="card">
+            <div class="card-header">
+                <span class="header-icon">🏆</span>
+                Top Acquisition Opportunities
+            </div>
+
+            <div class="leaderboard-item item-rank-1">
+                <div class="item-header">
+                    <span class="rank-badge rank-1">#1</span>
+                    <span class="well-id">TX-45678</span>
+                    <div class="score-container">
+                        <span class="score-label">Score:</span>
+                        <span class="score-value">94</span>
+                    </div>
+                    <span class="status-badge badge-trending">
+                        🔥 TRENDING
+                    </span>
+                </div>
+                <div class="item-details">
+                    <div>
+                        <span class="basin-name">Permian Basin</span>
+                        <span class="divider">|</span>
+                        <span class="value-amount">$2.1M Est. Value</span>
+                    </div>
+                </div>
+                <a href="#" class="view-details-btn">View Details</a>
+            </div>
+
+            <div class="leaderboard-item item-rank-2">
+                <div class="item-header">
+                    <span class="rank-badge rank-2">#2</span>
+                    <span class="well-id">OK-23456</span>
+                    <div class="score-container">
+                        <span class="score-label">Score:</span>
+                        <span class="score-value">91</span>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <div>
+                        <span class="basin-name">Anadarko Basin</span>
+                        <span class="divider">|</span>
+                        <span class="value-amount">$1.8M Est. Value</span>
+                    </div>
+                </div>
+                <a href="#" class="view-details-btn">View Details</a>
+            </div>
+
+            <div class="leaderboard-item item-rank-3">
+                <div class="item-header">
+                    <span class="rank-badge rank-3">#3</span>
+                    <span class="well-id">NM-78901</span>
+                    <div class="score-container">
+                        <span class="score-label">Score:</span>
+                        <span class="score-value">89</span>
+                    </div>
+                    <span class="status-badge badge-new">
+                        ⚡ NEW
+                    </span>
+                </div>
+                <div class="item-details">
+                    <div>
+                        <span class="basin-name">Delaware Basin</span>
+                        <span class="divider">|</span>
+                        <span class="value-amount">$2.4M Est. Value</span>
+                    </div>
+                </div>
+                <a href="#" class="view-details-btn">View Details</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add click animation for leaderboard items
+        document.querySelectorAll('.leaderboard-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (e.target.classList.contains('view-details-btn')) {
+                    e.preventDefault();
+                    // Handle view details action
+                    console.log('View details clicked for:', this.querySelector('.well-id').textContent);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

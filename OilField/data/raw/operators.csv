@@ -1,0 +1,21 @@
+operator_number,operator_name,address,city,state,zip,contact_phone,status
+OP000001,Permian Resources Operating LLC,4327 Energy St,Fort Worth,TX,78211,(387) 916-6412,Active
+OP000002,EOG Resources Inc,7526 Petroleum St,Dallas,TX,75247,(266) 686-2849,Active
+OP000003,Pioneer Natural Resources USA Inc,7942 Petroleum St,Dallas,TX,76399,(489) 986-6711,Active
+OP000004,ConocoPhillips Company,9515 Oil St,Fort Worth,TX,79161,(305) 615-2752,Active
+OP000005,Diamondback E&P LLC,9211 Main St,Dallas,TX,77474,(745) 672-7566,Active
+OP000006,Devon Energy Production Company LP,6873 Oil St,Fort Worth,TX,76996,(761) 362-8903,Active
+OP000007,Occidental Petroleum Corporation,1182 Energy St,Austin,TX,76705,(910) 805-8063,Active
+OP000008,Chevron USA Inc,9393 Energy St,Austin,TX,79460,(910) 441-3835,Active
+OP000009,Marathon Oil Company,1376 Commerce St,San Antonio,TX,78986,(317) 806-8584,Active
+OP000010,Apache Corporation,9194 Main St,Dallas,TX,78647,(380) 515-7648,Active
+OP000011,Callon Petroleum Operating Company,9901 Main St,Houston,TX,79885,(989) 588-6364,Active
+OP000012,Endeavor Energy Resources LP,1107 Main St,Austin,TX,76782,(342) 794-1003,Active
+OP000013,Centennial Resource Production LLC,2544 Petroleum St,Midland,TX,79352,(498) 599-8326,Active
+OP000014,Concho Resources Inc,3469 Energy St,Midland,TX,77455,(783) 895-5989,Active
+OP000015,Parsley Energy Operations LLC,5740 Main St,Austin,TX,79773,(208) 826-9362,Active
+OP000016,Cimarex Energy Company,2189 Energy St,Austin,TX,75511,(578) 762-1870,Active
+OP000017,SM Energy Company,9275 Energy St,Houston,TX,75898,(488) 231-4854,Active
+OP000018,Laredo Petroleum Inc,9769 Petroleum St,Austin,TX,77606,(928) 591-7652,Active
+OP000019,Matador Production Company,7230 Commerce St,Austin,TX,76730,(878) 377-8780,Active
+OP000020,Independence Resources Management LLC,3183 Commerce St,Midland,TX,78150,(568) 627-3527,Active

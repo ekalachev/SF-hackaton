@@ -1,0 +1,501 @@
+api,well_name,operator,county,field,latitude,longitude,depth_ft,completion_date,status,well_type,well_id
+42423000010002,Brown 76B,ConocoPhillips Company,Smith,East Texas,32.307503,-95.389988,11912,2022-02-02,Active,Oil,1
+42423000020002,Jackson 293H,Occidental Petroleum Corporation,Smith,East Texas,32.369798,-95.259193,12359,2023-08-27,Active,Oil,2
+42423000030001,Jones 98D,Permian Resources Operating LLC,Smith,East Texas,32.527642,-95.436136,10514,2022-04-15,Active,Oil,3
+42423000040002,Hernandez 49B,ConocoPhillips Company,Smith,East Texas,32.407694,-95.362418,6291,2023-07-20,Active,Oil,4
+42423000050000,Garcia 111H,Independence Resources Management LLC,Smith,East Texas,32.565636,-95.355346,8814,2022-04-14,Active,Oil,5
+42423000060000,Rodriguez 78B,Parsley Energy Operations LLC,Smith,East Texas,32.490705,-95.354067,7803,2023-07-01,Active,Oil,6
+42423000070002,Martinez 30A,Devon Energy Production Company LP,Smith,East Texas,32.438678,-95.392021,5525,2022-11-20,Active,Oil,7
+42423000080002,Moore 833H,Pioneer Natural Resources USA Inc,Smith,East Texas,32.363295,-95.122836,12517,2022-05-27,Active,Oil,8
+42423000090102,Taylor 292H,Chevron USA Inc,Smith,East Texas,32.523497,-95.284409,7266,2023-06-06,Active,Oil,9
+42423000100102,Williams 493H,EOG Resources Inc,Smith,East Texas,32.558331,-95.438863,14763,2023-04-25,Active,Oil,10
+42423000110002,Martinez 38B,Laredo Petroleum Inc,Smith,East Texas,32.558234,-95.495408,12123,2022-06-11,Active,Oil,11
+42423000120002,Wilson 20D,Marathon Oil Company,Smith,East Texas,32.591566,-95.195215,11126,2022-06-15,Active,Oil,12
+42423000130000,Anderson 311H,SM Energy Company,Smith,East Texas,32.575548,-95.260422,5949,2022-09-04,Active,Oil,13
+42423000140000,Moore 34C,Pioneer Natural Resources USA Inc,Smith,East Texas,32.325696,-95.305604,13645,2023-09-14,Active,Oil,14
+42423000150001,Anderson 674H,Occidental Petroleum Corporation,Smith,East Texas,32.578674,-95.197894,12397,2022-05-04,Active,Oil,15
+42423000160000,Williams 30A,Pioneer Natural Resources USA Inc,Smith,East Texas,32.401426,-95.264677,6104,2022-02-02,Active,Oil,16
+42423000170002,Jones 324H,Pioneer Natural Resources USA Inc,Smith,East Texas,32.454247,-95.388609,12749,2023-02-21,Active,Oil,17
+42423000180102,Johnson 8B,ConocoPhillips Company,Smith,East Texas,32.497695,-95.358281,11596,2022-12-14,Shut-in,Oil,18
+42423000190001,Miller 601H,ConocoPhillips Company,Smith,East Texas,32.374597,-95.423916,9092,2022-03-19,Active,Oil,19
+42423000200000,Garcia 53C,Laredo Petroleum Inc,Smith,East Texas,32.329373,-95.239142,12956,2023-05-08,Active,Oil,20
+42423000210101,Hernandez 551H,Centennial Resource Production LLC,Smith,East Texas,32.570733,-95.434145,14105,2023-11-09,Active,Oil,21
+42423000220002,Martinez 7A,Diamondback E&P LLC,Smith,East Texas,32.356969,-95.41292,14571,2023-05-04,Active,Oil,22
+42423000230000,White 87B,SM Energy Company,Smith,East Texas,32.34723,-95.115688,8853,2023-02-18,Active,Oil,23
+42423000240001,Thompson 342H,Matador Production Company,Smith,East Texas,32.373865,-95.262192,8346,2023-11-17,Active,Oil,24
+42423000250101,Williams 59A,Chevron USA Inc,Smith,East Texas,32.379684,-95.447649,14224,2022-04-13,Active,Oil,25
+42423000260000,Anderson 211H,Occidental Petroleum Corporation,Smith,East Texas,32.451765,-95.447017,12179,2023-07-11,Active,Oil,26
+42423000270002,Jackson 851H,Independence Resources Management LLC,Smith,East Texas,32.595156,-95.17716,6697,2022-05-18,Active,Oil,27
+42423000280002,Martinez 88D,ConocoPhillips Company,Smith,East Texas,32.522725,-95.437821,9325,2023-06-02,Active,Oil,28
+42423000290000,Martinez 82C,EOG Resources Inc,Smith,East Texas,32.32769,-95.33057,9291,2022-06-15,Active,Oil,29
+42423000300002,Jones 48A,Laredo Petroleum Inc,Smith,East Texas,32.5117,-95.275637,14543,2023-07-20,Active,Oil,30
+42423000310000,Garcia 46B,Diamondback E&P LLC,Smith,East Texas,32.312549,-95.354139,14173,2023-02-21,Active,Oil,31
+42423000320001,Smith 95C,Diamondback E&P LLC,Smith,East Texas,32.577729,-95.405305,10442,2023-02-26,Shut-in,Oil,32
+42423000330100,Moore 26D,Chevron USA Inc,Smith,East Texas,32.380042,-95.18505,12541,2022-12-25,Active,Oil,33
+42423000340001,Williams 451H,Chevron USA Inc,Smith,East Texas,32.366877,-95.235987,13346,2023-02-14,Active,Oil,34
+42423000350002,Rodriguez 14A,Laredo Petroleum Inc,Smith,East Texas,32.399345,-95.48896,14774,2023-03-21,Active,Oil,35
+42423000360102,Davis 61H,Callon Petroleum Operating Company,Smith,East Texas,32.430918,-95.106306,12144,2022-01-02,Active,Oil,36
+42423000370001,Williams 802H,Laredo Petroleum Inc,Smith,East Texas,32.506057,-95.123895,10143,2023-11-11,Active,Oil,37
+42423000380102,Wilson 25C,Apache Corporation,Smith,East Texas,32.452137,-95.233243,11888,2023-11-12,Active,Oil,38
+42423000390001,Wilson 56D,Devon Energy Production Company LP,Smith,East Texas,32.484654,-95.37962,14502,2023-09-14,Active,Oil,39
+42423000400102,Miller 37B,Parsley Energy Operations LLC,Smith,East Texas,32.432536,-95.229749,13445,2023-11-11,Active,Oil,40
+42423000410000,Davis 4C,Callon Petroleum Operating Company,Smith,East Texas,32.328016,-95.1192,5757,2022-09-08,Active,Oil,41
+42423000420002,Taylor 524H,Independence Resources Management LLC,Smith,East Texas,32.554921,-95.470869,8997,2022-06-01,Active,Oil,42
+42423000430100,Miller 74H,Permian Resources Operating LLC,Smith,East Texas,32.567798,-95.155824,14132,2022-09-13,Active,Oil,43
+42423000440001,White 713H,ConocoPhillips Company,Smith,East Texas,32.436939,-95.179433,12305,2022-06-12,Active,Oil,44
+42423000450102,Garcia 571H,Cimarex Energy Company,Smith,East Texas,32.435021,-95.199289,6269,2024-01-01,Active,Oil,45
+42423000460000,Garcia 893H,Marathon Oil Company,Smith,East Texas,32.400754,-95.142789,7503,2023-12-25,Active,Oil,46
+42423000470000,Thomas 993H,Concho Resources Inc,Smith,East Texas,32.42228,-95.282956,14569,2023-12-14,Active,Oil,47
+42423000480001,Thomas 63D,Matador Production Company,Smith,East Texas,32.414114,-95.497642,8595,2022-10-07,Active,Oil,48
+42423000490001,Jones 51A,Permian Resources Operating LLC,Smith,East Texas,32.416657,-95.232451,14697,2023-08-01,Active,Oil,49
+42423000500000,Rodriguez 423H,Pioneer Natural Resources USA Inc,Smith,East Texas,32.492825,-95.44572,8467,2023-04-11,Active,Oil,50
+42423000510000,Moore 96A,Centennial Resource Production LLC,Smith,East Texas,32.383477,-95.119518,13837,2022-02-23,Active,Oil,51
+42423000520000,Davis 80A,Endeavor Energy Resources LP,Smith,East Texas,32.367267,-95.472553,7496,2022-09-02,Active,Oil,52
+42423000530000,White 21B,ConocoPhillips Company,Smith,East Texas,32.469191,-95.412814,10096,2022-04-21,Active,Oil,53
+42423000540102,Davis 76B,Apache Corporation,Smith,East Texas,32.472739,-95.13679,8978,2022-04-15,Active,Oil,54
+42423000550001,Jackson 853H,Apache Corporation,Smith,East Texas,32.555088,-95.259835,11071,2022-03-12,Active,Oil,55
+42423000560001,Anderson 914H,Callon Petroleum Operating Company,Smith,East Texas,32.303796,-95.331977,7506,2023-03-22,Active,Oil,56
+42423000570101,Thomas 421H,SM Energy Company,Smith,East Texas,32.589642,-95.391967,9022,2022-03-30,Active,Oil,57
+42423000580101,Smith 424H,Parsley Energy Operations LLC,Smith,East Texas,32.373159,-95.314117,7979,2023-05-15,Active,Oil,58
+42423000590002,Davis 31B,Marathon Oil Company,Smith,East Texas,32.402102,-95.147872,11658,2023-05-16,Active,Oil,59
+42423000600100,Williams 291H,Chevron USA Inc,Smith,East Texas,32.507183,-95.241639,11625,2023-12-10,Active,Oil,60
+42423000610102,Jackson 462H,Matador Production Company,Smith,East Texas,32.410706,-95.278611,12434,2022-10-05,Active,Oil,61
+42423000620000,Davis 364H,Chevron USA Inc,Smith,East Texas,32.336197,-95.422966,14659,2023-06-22,Active,Oil,62
+42423000630001,Smith 36C,ConocoPhillips Company,Smith,East Texas,32.549789,-95.381501,5745,2022-02-25,Active,Oil,63
+42423000640002,Wilson 624H,Diamondback E&P LLC,Smith,East Texas,32.491361,-95.198883,12216,2022-12-15,Active,Oil,64
+42423000650001,Moore 74B,EOG Resources Inc,Smith,East Texas,32.375744,-95.155311,5878,2022-06-05,Active,Oil,65
+42423000660002,Thomas 67D,Matador Production Company,Smith,East Texas,32.584738,-95.465928,11232,2023-04-07,Active,Oil,66
+42423000670002,Brown 81D,Apache Corporation,Smith,East Texas,32.55805,-95.103987,8457,2022-09-28,Active,Oil,67
+42423000680001,Hernandez 384H,Devon Energy Production Company LP,Smith,East Texas,32.37196,-95.279203,5534,2022-08-26,Active,Oil,68
+42423000690002,Thompson 55D,Apache Corporation,Smith,East Texas,32.510896,-95.318387,6880,2023-07-12,Active,Oil,69
+42423000700000,Wilson 571H,Diamondback E&P LLC,Smith,East Texas,32.572523,-95.169348,7037,2023-04-25,Active,Oil,70
+42423000710100,White 56A,Centennial Resource Production LLC,Smith,East Texas,32.582803,-95.299811,10280,2023-09-11,Active,Oil,71
+42423000720002,Rodriguez 98A,Pioneer Natural Resources USA Inc,Smith,East Texas,32.368677,-95.230281,7870,2023-04-27,Active,Oil,72
+42423000730102,Moore 61B,Parsley Energy Operations LLC,Smith,East Texas,32.574822,-95.427404,10700,2023-02-23,Active,Oil,73
+42423000740002,Taylor 59A,ConocoPhillips Company,Smith,East Texas,32.55732,-95.368079,6442,2022-11-19,Active,Oil,74
+42423000750002,Jackson 534H,ConocoPhillips Company,Smith,East Texas,32.591055,-95.33833,5888,2022-07-12,Active,Oil,75
+42423000760001,Jackson 37C,Independence Resources Management LLC,Smith,East Texas,32.526933,-95.249837,12178,2023-12-17,Active,Oil,76
+42423000770001,Jackson 71A,Permian Resources Operating LLC,Smith,East Texas,32.591944,-95.256451,11684,2022-04-06,Active,Oil,77
+42423000780102,Wilson 541H,ConocoPhillips Company,Smith,East Texas,32.438434,-95.453014,12905,2023-04-29,Active,Oil,78
+42423000790000,Rodriguez 443H,Laredo Petroleum Inc,Smith,East Texas,32.343393,-95.423756,13318,2022-10-01,Active,Oil,79
+42423000800100,Hernandez 454H,Apache Corporation,Smith,East Texas,32.517815,-95.16501,10446,2023-07-20,Active,Oil,80
+42329000810002,Taylor 53D,Centennial Resource Production LLC,Midland,Permian Basin,31.982138,-102.171289,5715,2022-11-22,Active,Oil,81
+42329000820100,Jones 132H,Centennial Resource Production LLC,Midland,Permian Basin,31.954432,-102.034524,12213,2022-04-13,Active,Oil,82
+42329000830001,Rodriguez 802H,Parsley Energy Operations LLC,Midland,Permian Basin,31.806139,-102.242338,11512,2023-10-28,Active,Oil,83
+42329000840002,Moore 80A,Callon Petroleum Operating Company,Midland,Permian Basin,32.140937,-101.956263,6121,2022-08-29,Active,Oil,84
+42329000850002,Brown 224H,Apache Corporation,Midland,Permian Basin,32.19897,-102.001293,9906,2022-01-30,Active,Oil,85
+42329000860002,Thomas 22C,EOG Resources Inc,Midland,Permian Basin,31.917347,-102.150064,7868,2022-03-22,Active,Oil,86
+42329000870000,Hernandez 591H,Centennial Resource Production LLC,Midland,Permian Basin,32.047884,-102.203668,9183,2023-11-14,Active,Oil,87
+42329000880001,Anderson 821H,Parsley Energy Operations LLC,Midland,Permian Basin,32.160484,-102.028956,11951,2023-12-08,Active,Oil,88
+42329000890000,Taylor 742H,Apache Corporation,Midland,Permian Basin,31.879687,-102.146123,9847,2023-12-18,Active,Oil,89
+42329000900101,Garcia 292H,Centennial Resource Production LLC,Midland,Permian Basin,31.909792,-102.073628,8115,2023-09-28,Active,Oil,90
+42329000910001,Johnson 942H,Diamondback E&P LLC,Midland,Permian Basin,32.051299,-101.938639,7153,2022-04-03,Active,Oil,91
+42329000920002,Martin 221H,Callon Petroleum Operating Company,Midland,Permian Basin,32.098992,-102.229744,9210,2023-05-09,Active,Oil,92
+42329000930100,Jones 87D,Apache Corporation,Midland,Permian Basin,32.098624,-102.164514,11511,2023-07-25,Active,Oil,93
+42329000940002,Rodriguez 823H,Centennial Resource Production LLC,Midland,Permian Basin,31.805567,-102.085371,11086,2022-04-21,Active,Oil,94
+42329000950002,Garcia 82B,Cimarex Energy Company,Midland,Permian Basin,31.81001,-101.946306,12606,2023-12-19,Active,Oil,95
+42329000960001,Brown 31B,Concho Resources Inc,Midland,Permian Basin,31.84667,-102.281861,13807,2022-05-19,Active,Oil,96
+42329000970102,Jones 843H,Endeavor Energy Resources LP,Midland,Permian Basin,32.068194,-102.002744,6622,2023-05-17,Active,Oil,97
+42329000980100,Anderson 88B,Marathon Oil Company,Midland,Permian Basin,31.813087,-102.151788,11018,2023-07-12,Active,Oil,98
+42329000990100,Davis 7A,Endeavor Energy Resources LP,Midland,Permian Basin,31.82422,-102.189647,10464,2022-09-07,Active,Oil,99
+42329001000002,Davis 43D,Matador Production Company,Midland,Permian Basin,31.882082,-101.968073,7417,2023-09-03,Active,Oil,100
+42329001010002,Smith 2C,Diamondback E&P LLC,Midland,Permian Basin,32.195011,-102.083914,10869,2022-09-01,Active,Oil,101
+42329001020002,Williams 584H,Permian Resources Operating LLC,Midland,Permian Basin,31.869698,-102.27904,10931,2023-06-10,Active,Oil,102
+42329001030001,Smith 62A,Parsley Energy Operations LLC,Midland,Permian Basin,32.001535,-101.921834,11580,2023-03-13,Active,Oil,103
+42329001040002,Jones 17B,Cimarex Energy Company,Midland,Permian Basin,32.084961,-102.122575,9505,2023-10-02,Active,Oil,104
+42329001050001,Martin 133H,Laredo Petroleum Inc,Midland,Permian Basin,32.084861,-102.147638,6874,2023-11-02,Active,Oil,105
+42329001060001,Martinez 524H,Laredo Petroleum Inc,Midland,Permian Basin,32.088336,-102.213991,11815,2022-04-08,Active,Oil,106
+42329001070100,Williams 12B,Callon Petroleum Operating Company,Midland,Permian Basin,32.066043,-102.15028,12075,2022-04-09,Active,Oil,107
+42329001080002,Brown 463H,Endeavor Energy Resources LP,Midland,Permian Basin,32.124708,-102.077452,11929,2022-02-22,Active,Oil,108
+42329001090000,Moore 14D,Independence Resources Management LLC,Midland,Permian Basin,31.92498,-102.25856,10736,2023-07-24,Active,Oil,109
+42329001100002,Rodriguez 24A,Marathon Oil Company,Midland,Permian Basin,32.02964,-101.977111,9477,2023-12-21,Active,Oil,110
+42329001110100,Jones 12A,Callon Petroleum Operating Company,Midland,Permian Basin,31.940409,-102.227438,13691,2022-08-09,Active,Oil,111
+42329001120000,Jones 97C,Parsley Energy Operations LLC,Midland,Permian Basin,31.936358,-102.151979,5815,2023-11-22,Active,Oil,112
+42329001130101,Davis 45B,Parsley Energy Operations LLC,Midland,Permian Basin,32.064775,-102.105735,12043,2022-04-24,Active,Oil,113
+42329001140001,White 1A,Matador Production Company,Midland,Permian Basin,31.994653,-102.033147,8349,2022-11-05,Active,Oil,114
+42329001150001,Thomas 17C,Diamondback E&P LLC,Midland,Permian Basin,32.105664,-102.184221,11229,2023-06-30,Active,Oil,115
+42329001160001,Johnson 33H,SM Energy Company,Midland,Permian Basin,32.023489,-102.032781,12532,2022-03-21,Active,Oil,116
+42329001170000,Taylor 42A,Matador Production Company,Midland,Permian Basin,31.971714,-102.138231,7815,2023-09-25,Active,Oil,117
+42329001180102,Taylor 51B,Endeavor Energy Resources LP,Midland,Permian Basin,31.835252,-101.962206,10083,2022-12-14,Active,Oil,118
+42329001190001,Anderson 31C,Devon Energy Production Company LP,Midland,Permian Basin,31.830552,-102.04671,6684,2022-05-30,Active,Oil,119
+42329001200002,Moore 974H,Devon Energy Production Company LP,Midland,Permian Basin,32.04096,-101.995914,14236,2023-08-17,Active,Oil,120
+42329001210000,Hernandez 61B,Matador Production Company,Midland,Permian Basin,32.057197,-101.905387,12245,2023-10-09,Active,Oil,121
+42329001220001,Hernandez 8A,Marathon Oil Company,Midland,Permian Basin,32.036568,-102.159223,11041,2022-10-21,Active,Oil,122
+42329001230001,Thompson 42D,Pioneer Natural Resources USA Inc,Midland,Permian Basin,32.046003,-102.097173,14912,2023-05-03,Active,Oil,123
+42329001240002,Miller 32A,EOG Resources Inc,Midland,Permian Basin,31.980209,-101.975613,12172,2023-03-26,Active,Oil,124
+42329001250101,Martinez 81A,Independence Resources Management LLC,Midland,Permian Basin,31.863498,-102.150859,10482,2022-03-09,Active,Oil,125
+42329001260001,Williams 45C,Laredo Petroleum Inc,Midland,Permian Basin,32.071352,-102.186341,10082,2023-11-03,Active,Oil,126
+42329001270002,Taylor 172H,Centennial Resource Production LLC,Midland,Permian Basin,31.851581,-102.016466,13624,2022-04-06,Active,Oil,127
+42329001280000,Martinez 254H,Concho Resources Inc,Midland,Permian Basin,32.003395,-102.292708,8711,2022-05-21,Active,Oil,128
+42329001290002,Martinez 77C,Apache Corporation,Midland,Permian Basin,32.137771,-102.259544,11172,2022-06-07,Active,Oil,129
+42329001300001,Anderson 57D,Independence Resources Management LLC,Midland,Permian Basin,32.123617,-102.233784,9668,2023-04-05,Active,Oil,130
+42329001310001,Thompson 604H,Chevron USA Inc,Midland,Permian Basin,31.923787,-101.97655,9616,2023-01-27,Active,Oil,131
+42329001320001,Johnson 484H,Concho Resources Inc,Midland,Permian Basin,32.186507,-101.973244,14085,2022-04-16,Active,Oil,132
+42329001330001,Martin 56C,SM Energy Company,Midland,Permian Basin,32.140466,-102.185975,6502,2022-08-16,Active,Oil,133
+42329001340000,Taylor 48B,Endeavor Energy Resources LP,Midland,Permian Basin,32.172189,-102.134041,8678,2022-01-29,Active,Oil,134
+42329001350000,Wilson 904H,ConocoPhillips Company,Midland,Permian Basin,32.135671,-102.040016,7273,2023-12-24,Active,Oil,135
+42329001360000,Jackson 153H,Independence Resources Management LLC,Midland,Permian Basin,31.8021,-102.26831,9720,2022-09-01,Active,Oil,136
+42329001370100,Brown 774H,EOG Resources Inc,Midland,Permian Basin,31.895376,-102.044419,13782,2022-01-17,Active,Oil,137
+42329001380002,Anderson 74D,Matador Production Company,Midland,Permian Basin,31.896775,-102.242569,11825,2022-07-11,Active,Oil,138
+42329001390001,Moore 82A,Pioneer Natural Resources USA Inc,Midland,Permian Basin,32.009394,-102.155758,11338,2023-01-18,Active,Oil,139
+42329001400002,Martinez 6C,Permian Resources Operating LLC,Midland,Permian Basin,31.942838,-102.272976,10772,2023-07-14,Active,Oil,140
+42329001410000,Williams 54H,Devon Energy Production Company LP,Midland,Permian Basin,32.132153,-102.026127,9807,2022-07-26,Active,Oil,141
+42329001420102,Moore 51H,Occidental Petroleum Corporation,Midland,Permian Basin,32.154316,-102.173762,8131,2022-10-20,Active,Oil,142
+42329001430001,Taylor 504H,EOG Resources Inc,Midland,Permian Basin,32.146319,-102.16723,10554,2022-07-11,Active,Oil,143
+42329001440002,Thomas 56B,Cimarex Energy Company,Midland,Permian Basin,31.946939,-101.981084,14870,2022-07-04,Active,Oil,144
+42329001450001,White 223H,Callon Petroleum Operating Company,Midland,Permian Basin,31.841039,-102.168832,12272,2022-12-26,Active,Oil,145
+42329001460002,Taylor 662H,Endeavor Energy Resources LP,Midland,Permian Basin,32.045941,-102.126024,7621,2022-02-01,Active,Oil,146
+42329001470000,Anderson 502H,Independence Resources Management LLC,Midland,Permian Basin,32.071236,-102.124731,14293,2022-02-03,Active,Oil,147
+42329001480002,Anderson 413H,Parsley Energy Operations LLC,Midland,Permian Basin,32.179529,-102.151195,9566,2022-09-13,Active,Oil,148
+42329001490001,Rodriguez 284H,Permian Resources Operating LLC,Midland,Permian Basin,32.09427,-102.100382,9678,2023-12-12,Active,Oil,149
+42329001500100,Hernandez 88B,Cimarex Energy Company,Midland,Permian Basin,31.880071,-102.245709,10236,2023-11-15,Active,Oil,150
+42329001510002,Miller 662H,Pioneer Natural Resources USA Inc,Midland,Permian Basin,32.019999,-102.183855,8673,2022-05-05,Active,Oil,151
+42329001520001,Jackson 79C,Diamondback E&P LLC,Midland,Permian Basin,31.894694,-102.102391,6412,2022-03-09,Active,Oil,152
+42329001530000,Martinez 58B,Cimarex Energy Company,Midland,Permian Basin,32.010278,-101.992334,12632,2023-11-28,Active,Oil,153
+42329001540000,Thomas 16A,Diamondback E&P LLC,Midland,Permian Basin,32.151184,-101.987895,13488,2022-06-06,Active,Oil,154
+42329001550000,Rodriguez 82D,Devon Energy Production Company LP,Midland,Permian Basin,31.929064,-102.016267,14024,2022-10-09,Active,Oil,155
+42329001560000,White 732H,Apache Corporation,Midland,Permian Basin,32.045771,-102.262629,5674,2022-01-30,Active,Oil,156
+42329001570102,Smith 814H,Matador Production Company,Midland,Permian Basin,31.905862,-102.215677,13938,2022-10-24,Active,Oil,157
+42329001580001,Williams 21A,Apache Corporation,Midland,Permian Basin,31.993178,-101.978125,12202,2023-03-02,Active,Oil,158
+42329001590001,Jones 662H,Occidental Petroleum Corporation,Midland,Permian Basin,31.936077,-102.242533,14202,2022-04-19,Active,Oil,159
+42329001600000,Wilson 793H,Parsley Energy Operations LLC,Midland,Permian Basin,31.849009,-102.120162,11850,2022-09-12,Active,Oil,160
+42329001610000,Moore 644H,Devon Energy Production Company LP,Midland,Permian Basin,32.125391,-101.926499,10055,2023-05-25,Active,Oil,161
+42329001620000,Johnson 641H,Centennial Resource Production LLC,Midland,Permian Basin,32.002178,-101.913325,14789,2023-11-01,Active,Oil,162
+42329001630001,Anderson 473H,Apache Corporation,Midland,Permian Basin,32.014676,-101.961131,5741,2023-02-15,Active,Oil,163
+42329001640102,Hernandez 801H,Laredo Petroleum Inc,Midland,Permian Basin,31.877862,-102.078711,6946,2022-05-12,Active,Oil,164
+42329001650000,Davis 653H,Centennial Resource Production LLC,Midland,Permian Basin,31.949279,-101.905285,5659,2022-02-16,Active,Oil,165
+42329001660001,White 212H,Callon Petroleum Operating Company,Midland,Permian Basin,32.121586,-102.092267,11438,2023-09-24,Active,Oil,166
+42329001670102,Thompson 611H,Apache Corporation,Midland,Permian Basin,32.03749,-102.097074,5272,2023-01-13,Active,Oil,167
+42329001680101,Thompson 93D,ConocoPhillips Company,Midland,Permian Basin,32.191959,-102.066519,5841,2023-08-21,Active,Oil,168
+42329001690002,Garcia 74A,SM Energy Company,Midland,Permian Basin,32.05161,-102.052106,6800,2022-07-15,Active,Oil,169
+42329001700102,White 954H,Callon Petroleum Operating Company,Midland,Permian Basin,31.967512,-102.134816,6020,2023-12-24,Active,Oil,170
+42329001710101,Miller 694H,Occidental Petroleum Corporation,Midland,Permian Basin,32.024355,-101.900751,10608,2023-07-14,Active,Oil,171
+42329001720002,Wilson 39D,Marathon Oil Company,Midland,Permian Basin,32.044031,-102.223094,9735,2023-12-23,Active,Oil,172
+42329001730000,Thompson 513H,Cimarex Energy Company,Midland,Permian Basin,31.926816,-102.160479,10654,2022-05-30,Active,Oil,173
+42329001740002,Moore 26D,Apache Corporation,Midland,Permian Basin,32.182125,-102.268388,13824,2022-10-05,Active,Oil,174
+42329001750000,Johnson 82D,Marathon Oil Company,Midland,Permian Basin,31.854909,-102.053729,8814,2022-02-23,Active,Oil,175
+42329001760002,Miller 843H,Callon Petroleum Operating Company,Midland,Permian Basin,32.086943,-102.259782,12793,2023-05-04,Active,Oil,176
+42329001770002,Johnson 54C,Apache Corporation,Midland,Permian Basin,31.928467,-102.041641,7880,2022-02-07,Active,Oil,177
+42329001780000,Wilson 43B,Centennial Resource Production LLC,Midland,Permian Basin,32.115184,-102.225475,9662,2023-04-11,Active,Oil,178
+42329001790101,Davis 43B,Laredo Petroleum Inc,Midland,Permian Basin,32.009727,-101.944296,7662,2023-04-15,Active,Oil,179
+42329001800000,White 553H,Devon Energy Production Company LP,Midland,Permian Basin,31.805634,-102.165155,13442,2022-12-02,Active,Oil,180
+42329001810000,Rodriguez 313H,ConocoPhillips Company,Midland,Permian Basin,31.873912,-102.243755,12319,2022-10-01,Active,Oil,181
+42329001820002,Garcia 86A,Apache Corporation,Midland,Permian Basin,32.032984,-102.070849,6936,2023-04-22,Active,Oil,182
+42329001830002,Wilson 792H,Centennial Resource Production LLC,Midland,Permian Basin,32.074429,-101.930758,8618,2022-08-13,Active,Oil,183
+42329001840001,Jackson 974H,Cimarex Energy Company,Midland,Permian Basin,31.861274,-102.000906,13806,2023-11-12,Active,Oil,184
+42329001850102,Anderson 73B,Chevron USA Inc,Midland,Permian Basin,32.072137,-102.061674,6838,2022-03-05,Active,Oil,185
+42329001860002,Hernandez 88B,SM Energy Company,Midland,Permian Basin,31.880863,-102.085336,8365,2023-08-21,Active,Oil,186
+42329001870101,Thompson 72A,SM Energy Company,Midland,Permian Basin,31.978193,-102.277746,12575,2023-11-20,Shut-in,Oil,187
+42329001880000,Thomas 902H,Permian Resources Operating LLC,Midland,Permian Basin,31.958379,-101.973419,6044,2023-07-09,Active,Oil,188
+42329001890100,Jones 483H,Pioneer Natural Resources USA Inc,Midland,Permian Basin,32.194455,-102.111172,11266,2023-04-05,Active,Oil,189
+42329001900002,Anderson 23B,Centennial Resource Production LLC,Midland,Permian Basin,31.950258,-102.026908,13802,2023-02-07,Active,Oil,190
+42329001910102,Jackson 693H,Chevron USA Inc,Midland,Permian Basin,32.133929,-101.997528,11214,2022-08-24,Active,Oil,191
+42329001920002,Thomas 31A,Endeavor Energy Resources LP,Midland,Permian Basin,31.862049,-102.224608,8376,2022-03-10,Active,Oil,192
+42329001930002,Johnson 573H,EOG Resources Inc,Midland,Permian Basin,31.978576,-102.031191,8839,2023-07-07,Active,Oil,193
+42329001940002,White 312H,EOG Resources Inc,Midland,Permian Basin,31.856054,-101.902607,9944,2022-05-27,Active,Oil,194
+42329001950002,Thomas 74H,SM Energy Company,Midland,Permian Basin,31.888417,-102.1798,10642,2023-10-21,Active,Oil,195
+42329001960001,Miller 314H,SM Energy Company,Midland,Permian Basin,31.927494,-102.13347,8692,2022-11-04,Active,Oil,196
+42329001970101,Jackson 50C,Diamondback E&P LLC,Midland,Permian Basin,32.12231,-101.934104,8978,2022-09-19,Active,Oil,197
+42329001980000,Rodriguez 873H,Pioneer Natural Resources USA Inc,Midland,Permian Basin,32.16889,-101.961147,14911,2023-09-10,Active,Oil,198
+42329001990001,Davis 392H,Pioneer Natural Resources USA Inc,Midland,Permian Basin,31.875265,-101.995321,5251,2022-08-05,Active,Oil,199
+42329002000001,Garcia 372H,ConocoPhillips Company,Midland,Permian Basin,32.098752,-101.998268,11236,2023-04-23,Active,Oil,200
+42479002010100,Moore 272H,Endeavor Energy Resources LP,Webb,Eagle Ford,27.454211,-99.584213,11073,2022-11-17,Active,Oil,201
+42479002020002,Thompson 383H,Matador Production Company,Webb,Eagle Ford,27.732042,-99.355249,7497,2022-07-20,Active,Oil,202
+42479002030001,Moore 594H,Centennial Resource Production LLC,Webb,Eagle Ford,27.584895,-99.652562,7756,2022-12-27,Active,Oil,203
+42479002040002,Johnson 86B,Laredo Petroleum Inc,Webb,Eagle Ford,27.544158,-99.24986,5794,2022-01-07,Active,Oil,204
+42479002050101,Johnson 854H,Chevron USA Inc,Webb,Eagle Ford,27.333984,-99.709382,12993,2022-01-17,Active,Oil,205
+42479002060000,Martin 233H,Laredo Petroleum Inc,Webb,Eagle Ford,27.505669,-99.789964,6753,2022-04-09,Active,Oil,206
+42479002070001,Williams 522H,Chevron USA Inc,Webb,Eagle Ford,27.395966,-99.484126,12520,2023-08-02,Active,Oil,207
+42479002080000,Taylor 493H,Chevron USA Inc,Webb,Eagle Ford,27.449987,-99.303163,14055,2023-05-03,Active,Oil,208
+42479002090002,Brown 30A,Permian Resources Operating LLC,Webb,Eagle Ford,27.651423,-99.750388,8463,2023-12-10,Active,Oil,209
+42479002100000,Martinez 27A,Cimarex Energy Company,Webb,Eagle Ford,27.435548,-99.245504,14617,2022-05-28,Active,Oil,210
+42479002110002,Taylor 502H,Centennial Resource Production LLC,Webb,Eagle Ford,27.764437,-99.620434,7292,2023-12-07,Active,Oil,211
+42479002120100,Williams 782H,SM Energy Company,Webb,Eagle Ford,27.672728,-99.592484,14758,2023-02-11,Active,Oil,212
+42479002130100,Anderson 563H,Callon Petroleum Operating Company,Webb,Eagle Ford,27.314813,-99.636004,8043,2023-11-28,Active,Oil,213
+42479002140000,Rodriguez 49C,Centennial Resource Production LLC,Webb,Eagle Ford,27.342847,-99.42883,7527,2023-02-03,Active,Oil,214
+42479002150001,Brown 12C,ConocoPhillips Company,Webb,Eagle Ford,27.34576,-99.234224,8070,2023-03-18,Active,Oil,215
+42479002160002,Williams 502H,Laredo Petroleum Inc,Webb,Eagle Ford,27.55622,-99.738024,5202,2022-10-26,Active,Oil,216
+42479002170002,Taylor 18C,Pioneer Natural Resources USA Inc,Webb,Eagle Ford,27.662422,-99.464278,9405,2022-11-05,Active,Oil,217
+42479002180001,Williams 332H,Diamondback E&P LLC,Webb,Eagle Ford,27.331634,-99.539194,9040,2023-10-03,Active,Oil,218
+42479002190001,Martinez 433H,Independence Resources Management LLC,Webb,Eagle Ford,27.397774,-99.735817,12212,2022-12-09,Active,Oil,219
+42479002200101,Miller 413H,Independence Resources Management LLC,Webb,Eagle Ford,27.368062,-99.607601,9775,2023-12-13,Active,Oil,220
+42479002210101,Brown 76D,Matador Production Company,Webb,Eagle Ford,27.690987,-99.604468,13939,2022-07-04,Active,Oil,221
+42479002220101,Williams 873H,Laredo Petroleum Inc,Webb,Eagle Ford,27.313458,-99.363672,13180,2022-05-23,Active,Oil,222
+42479002230100,Hernandez 754H,Chevron USA Inc,Webb,Eagle Ford,27.426341,-99.707514,11566,2023-07-02,Active,Oil,223
+42479002240000,Garcia 222H,Concho Resources Inc,Webb,Eagle Ford,27.571823,-99.325567,5725,2023-07-31,Active,Oil,224
+42479002250000,Brown 291H,Centennial Resource Production LLC,Webb,Eagle Ford,27.783406,-99.601042,13366,2023-06-16,Active,Oil,225
+42479002260001,Smith 144H,Matador Production Company,Webb,Eagle Ford,27.410516,-99.575528,9840,2023-03-02,Active,Oil,226
+42479002270001,Martinez 274H,Pioneer Natural Resources USA Inc,Webb,Eagle Ford,27.358035,-99.235594,13537,2023-05-10,Active,Oil,227
+42479002280001,Johnson 3B,ConocoPhillips Company,Webb,Eagle Ford,27.519083,-99.381942,10620,2023-10-26,Active,Oil,228
+42479002290002,Miller 722H,Devon Energy Production Company LP,Webb,Eagle Ford,27.764961,-99.355706,11985,2023-04-19,Active,Oil,229
+42479002300100,White 58D,Centennial Resource Production LLC,Webb,Eagle Ford,27.61488,-99.688168,14702,2023-03-16,Active,Oil,230
+42479002310002,Miller 422H,Occidental Petroleum Corporation,Webb,Eagle Ford,27.402892,-99.348605,8228,2023-04-14,Active,Oil,231
+42479002320102,Taylor 45B,Cimarex Energy Company,Webb,Eagle Ford,27.563858,-99.416535,10766,2023-04-14,Active,Oil,232
+42479002330000,Garcia 151H,Apache Corporation,Webb,Eagle Ford,27.759341,-99.445899,7999,2023-01-18,Active,Oil,233
+42479002340101,Miller 824H,SM Energy Company,Webb,Eagle Ford,27.494232,-99.442145,13804,2023-12-12,Active,Oil,234
+42479002350001,Hernandez 46A,Devon Energy Production Company LP,Webb,Eagle Ford,27.577456,-99.506215,5157,2023-05-12,Active,Oil,235
+42479002360102,Moore 913H,Centennial Resource Production LLC,Webb,Eagle Ford,27.781915,-99.496737,12272,2023-05-16,Active,Oil,236
+42479002370001,Garcia 221H,Matador Production Company,Webb,Eagle Ford,27.31543,-99.343366,12492,2023-08-03,Active,Oil,237
+42479002380002,Anderson 98A,Cimarex Energy Company,Webb,Eagle Ford,27.574863,-99.732073,12231,2023-07-14,Active,Oil,238
+42479002390000,Hernandez 451H,Concho Resources Inc,Webb,Eagle Ford,27.351208,-99.301958,6425,2023-03-26,Active,Oil,239
+42479002400002,White 223H,ConocoPhillips Company,Webb,Eagle Ford,27.687816,-99.657832,7281,2022-07-31,Active,Oil,240
+42479002410001,Wilson 741H,EOG Resources Inc,Webb,Eagle Ford,27.585037,-99.480632,9380,2023-06-11,Active,Oil,241
+42479002420001,Jones 32C,ConocoPhillips Company,Webb,Eagle Ford,27.367794,-99.349944,7396,2023-12-30,Active,Oil,242
+42479002430002,Rodriguez 493H,Chevron USA Inc,Webb,Eagle Ford,27.680737,-99.394259,12405,2022-03-19,Active,Oil,243
+42479002440101,Martinez 94A,Pioneer Natural Resources USA Inc,Webb,Eagle Ford,27.501425,-99.350119,6526,2023-04-15,Active,Oil,244
+42479002450001,Davis 354H,Endeavor Energy Resources LP,Webb,Eagle Ford,27.725053,-99.322593,10289,2022-10-18,Active,Oil,245
+42479002460000,Brown 34H,Matador Production Company,Webb,Eagle Ford,27.365297,-99.288546,7035,2022-06-11,Active,Oil,246
+42479002470000,Rodriguez 84B,Permian Resources Operating LLC,Webb,Eagle Ford,27.795919,-99.54332,10905,2022-09-14,Active,Oil,247
+42479002480102,Williams 1B,Devon Energy Production Company LP,Webb,Eagle Ford,27.325894,-99.424637,8496,2023-05-04,Active,Oil,248
+42479002490002,Martinez 55B,Matador Production Company,Webb,Eagle Ford,27.413095,-99.39201,7165,2023-05-05,Active,Oil,249
+42479002500001,Wilson 49C,Centennial Resource Production LLC,Webb,Eagle Ford,27.344666,-99.316426,7181,2023-10-19,Active,Oil,250
+42479002510001,Anderson 81D,Diamondback E&P LLC,Webb,Eagle Ford,27.334206,-99.462025,7480,2023-02-26,Active,Oil,251
+42479002520000,Thompson 453H,Parsley Energy Operations LLC,Webb,Eagle Ford,27.729981,-99.747987,12035,2022-11-19,Shut-in,Oil,252
+42479002530002,Smith 271H,Chevron USA Inc,Webb,Eagle Ford,27.438484,-99.749451,13482,2023-09-14,Active,Oil,253
+42479002540101,Brown 64D,Centennial Resource Production LLC,Webb,Eagle Ford,27.447771,-99.767259,14730,2022-03-14,Active,Oil,254
+42479002550102,Thomas 702H,Permian Resources Operating LLC,Webb,Eagle Ford,27.793441,-99.239645,7830,2023-04-28,Active,Oil,255
+42479002560000,Johnson 653H,Pioneer Natural Resources USA Inc,Webb,Eagle Ford,27.308345,-99.75948,9693,2023-10-06,Active,Oil,256
+42479002570001,Williams 111H,Concho Resources Inc,Webb,Eagle Ford,27.511788,-99.558634,13377,2022-07-28,Active,Oil,257
+42479002580002,Thomas 8D,Diamondback E&P LLC,Webb,Eagle Ford,27.568195,-99.565561,9005,2022-03-30,Active,Oil,258
+42479002590000,Smith 90C,ConocoPhillips Company,Webb,Eagle Ford,27.526686,-99.434701,5185,2022-06-17,Active,Oil,259
+42479002600001,Jones 941H,Endeavor Energy Resources LP,Webb,Eagle Ford,27.561503,-99.330208,6934,2022-01-31,Active,Oil,260
+42479002610001,Hernandez 82H,Concho Resources Inc,Webb,Eagle Ford,27.43599,-99.761677,13185,2023-08-04,Active,Oil,261
+42479002620000,Martin 6A,Devon Energy Production Company LP,Webb,Eagle Ford,27.427558,-99.738257,5201,2022-09-08,Active,Oil,262
+42479002630100,Martinez 54D,Endeavor Energy Resources LP,Webb,Eagle Ford,27.49149,-99.709949,10241,2022-10-05,Active,Oil,263
+42479002640000,Martin 52A,Matador Production Company,Webb,Eagle Ford,27.486404,-99.498775,6129,2023-04-22,Active,Oil,264
+42479002650000,Wilson 951H,Apache Corporation,Webb,Eagle Ford,27.46365,-99.468145,8974,2023-04-21,Active,Oil,265
+42479002660000,Smith 43H,Cimarex Energy Company,Webb,Eagle Ford,27.798894,-99.334468,8817,2023-07-09,Active,Oil,266
+42479002670000,Davis 54D,Permian Resources Operating LLC,Webb,Eagle Ford,27.775495,-99.799123,13061,2022-03-03,Active,Oil,267
+42479002680102,Anderson 964H,Diamondback E&P LLC,Webb,Eagle Ford,27.655826,-99.744184,6391,2023-08-18,Active,Oil,268
+42479002690001,Jones 38D,Diamondback E&P LLC,Webb,Eagle Ford,27.618608,-99.563389,9276,2022-11-19,Active,Oil,269
+42479002700101,Garcia 26B,Centennial Resource Production LLC,Webb,Eagle Ford,27.650363,-99.358788,7230,2023-08-22,Active,Oil,270
+42479002710002,Anderson 58D,ConocoPhillips Company,Webb,Eagle Ford,27.382187,-99.520367,10051,2023-04-20,Active,Oil,271
+42479002720000,Martinez 12C,ConocoPhillips Company,Webb,Eagle Ford,27.34521,-99.315442,9066,2022-12-31,Active,Oil,272
+42479002730001,Hernandez 13D,EOG Resources Inc,Webb,Eagle Ford,27.638592,-99.6439,12570,2022-04-15,Shut-in,Oil,273
+42479002740000,Taylor 882H,Diamondback E&P LLC,Webb,Eagle Ford,27.360727,-99.762998,6376,2023-08-20,Active,Oil,274
+42479002750000,Martinez 6B,Pioneer Natural Resources USA Inc,Webb,Eagle Ford,27.3109,-99.761317,12552,2022-02-21,Active,Oil,275
+42479002760001,Thomas 46C,Matador Production Company,Webb,Eagle Ford,27.516578,-99.365341,8517,2022-07-11,Active,Oil,276
+42479002770002,Wilson 534H,Parsley Energy Operations LLC,Webb,Eagle Ford,27.741712,-99.77921,14022,2023-05-06,Active,Oil,277
+42479002780002,Jackson 49A,Marathon Oil Company,Webb,Eagle Ford,27.491508,-99.548459,10883,2023-05-07,Active,Oil,278
+42479002790101,Miller 41A,Cimarex Energy Company,Webb,Eagle Ford,27.472017,-99.460609,14783,2022-08-13,Active,Oil,279
+42479002800002,Garcia 13C,Marathon Oil Company,Webb,Eagle Ford,27.329296,-99.205081,9060,2023-11-04,Active,Oil,280
+42479002810002,Taylor 232H,Laredo Petroleum Inc,Webb,Eagle Ford,27.708143,-99.249644,7885,2022-08-31,Active,Oil,281
+42479002820002,Davis 704H,Endeavor Energy Resources LP,Webb,Eagle Ford,27.75699,-99.783076,10063,2022-06-29,Active,Oil,282
+42479002830100,Martinez 17D,Pioneer Natural Resources USA Inc,Webb,Eagle Ford,27.328084,-99.439002,10582,2022-07-01,Active,Oil,283
+42479002840002,Anderson 48B,Callon Petroleum Operating Company,Webb,Eagle Ford,27.329778,-99.711373,11481,2023-08-24,Active,Oil,284
+42479002850102,Martinez 91C,Apache Corporation,Webb,Eagle Ford,27.461302,-99.214484,14207,2023-12-12,Active,Oil,285
+42479002860001,Wilson 171H,Independence Resources Management LLC,Webb,Eagle Ford,27.693496,-99.666058,7911,2022-01-02,Active,Oil,286
+42479002870000,White 792H,Matador Production Company,Webb,Eagle Ford,27.495801,-99.20343,8619,2023-10-17,Active,Oil,287
+42479002880001,Miller 91B,Cimarex Energy Company,Webb,Eagle Ford,27.370322,-99.352794,10500,2023-04-03,Active,Oil,288
+42479002890002,Smith 50A,Occidental Petroleum Corporation,Webb,Eagle Ford,27.42477,-99.759323,12179,2023-03-06,Active,Oil,289
+42479002900100,Moore 21D,Concho Resources Inc,Webb,Eagle Ford,27.546541,-99.572772,12393,2022-03-17,Shut-in,Oil,290
+42255002910001,Miller 213H,EOG Resources Inc,Karnes,Eagle Ford,28.917963,-98.040642,6228,2023-07-15,Active,Oil,291
+42255002920001,Miller 213H,Pioneer Natural Resources USA Inc,Karnes,Eagle Ford,28.93518,-97.707362,5877,2022-04-14,Active,Oil,292
+42255002930002,Wilson 311H,Occidental Petroleum Corporation,Karnes,Eagle Ford,28.963712,-97.922944,6571,2022-02-20,Active,Oil,293
+42255002940001,Williams 851H,Laredo Petroleum Inc,Karnes,Eagle Ford,29.135942,-98.123205,14833,2023-05-07,Active,Oil,294
+42255002950100,Wilson 613H,Permian Resources Operating LLC,Karnes,Eagle Ford,28.882781,-97.880905,13013,2023-11-08,Active,Oil,295
+42255002960000,Hernandez 34A,Laredo Petroleum Inc,Karnes,Eagle Ford,28.955011,-98.01449,12204,2023-04-22,Active,Oil,296
+42255002970002,Anderson 973H,Marathon Oil Company,Karnes,Eagle Ford,29.025699,-98.124435,14662,2022-08-21,Active,Oil,297
+42255002980102,Garcia 394H,Centennial Resource Production LLC,Karnes,Eagle Ford,29.127362,-97.990684,6293,2023-02-09,Active,Oil,298
+42255002990000,Hernandez 22C,EOG Resources Inc,Karnes,Eagle Ford,29.000841,-97.749772,8471,2022-07-17,Active,Oil,299
+42255003000002,Rodriguez 942H,Concho Resources Inc,Karnes,Eagle Ford,28.831347,-97.858437,6097,2022-03-31,Active,Oil,300
+42255003010100,White 153H,Centennial Resource Production LLC,Karnes,Eagle Ford,29.020822,-97.771688,11790,2022-06-03,Active,Oil,301
+42255003020002,Brown 691H,Matador Production Company,Karnes,Eagle Ford,29.033071,-97.717584,10633,2023-02-25,Active,Oil,302
+42255003030001,Jones 53H,Cimarex Energy Company,Karnes,Eagle Ford,29.028809,-97.963477,11484,2022-12-06,Active,Oil,303
+42255003040001,Wilson 361H,EOG Resources Inc,Karnes,Eagle Ford,29.0983,-97.739583,13054,2023-12-14,Active,Oil,304
+42255003050001,Thomas 25B,Chevron USA Inc,Karnes,Eagle Ford,28.853754,-97.71289,12237,2022-08-05,Active,Oil,305
+42255003060002,Miller 40B,Concho Resources Inc,Karnes,Eagle Ford,29.096378,-97.820253,13303,2023-02-18,Active,Oil,306
+42255003070000,Garcia 59A,SM Energy Company,Karnes,Eagle Ford,29.151733,-98.185526,5828,2023-01-05,Active,Oil,307
+42255003080002,Smith 48D,Marathon Oil Company,Karnes,Eagle Ford,28.947341,-97.967891,13008,2023-09-01,Active,Oil,308
+42255003090002,Williams 41H,Cimarex Energy Company,Karnes,Eagle Ford,29.034752,-98.02512,11333,2022-02-20,Active,Oil,309
+42255003100002,Davis 841H,Matador Production Company,Karnes,Eagle Ford,29.111932,-98.092841,11709,2023-06-10,Active,Oil,310
+42255003110000,Rodriguez 921H,Permian Resources Operating LLC,Karnes,Eagle Ford,28.989639,-98.133843,9511,2023-03-10,Active,Oil,311
+42255003120102,Brown 66A,Endeavor Energy Resources LP,Karnes,Eagle Ford,28.983599,-98.090895,11131,2023-07-29,Active,Oil,312
+42255003130001,Rodriguez 362H,Independence Resources Management LLC,Karnes,Eagle Ford,28.913071,-97.857793,9278,2023-11-03,Active,Oil,313
+42255003140002,Taylor 882H,Apache Corporation,Karnes,Eagle Ford,28.875344,-97.941353,7292,2022-01-27,Active,Oil,314
+42255003150002,Thompson 44D,Apache Corporation,Karnes,Eagle Ford,28.903771,-97.990717,8643,2023-12-04,Active,Oil,315
+42255003160000,Jackson 38C,Cimarex Energy Company,Karnes,Eagle Ford,29.162611,-97.864066,6599,2023-04-28,Active,Oil,316
+42255003170002,Williams 46D,Marathon Oil Company,Karnes,Eagle Ford,29.090075,-97.920484,8659,2022-11-11,Active,Oil,317
+42255003180001,Johnson 61B,Callon Petroleum Operating Company,Karnes,Eagle Ford,28.948673,-97.907215,8187,2023-05-28,Active,Oil,318
+42255003190000,Martinez 733H,Centennial Resource Production LLC,Karnes,Eagle Ford,29.011935,-97.993446,12496,2022-05-27,Active,Oil,319
+42255003200002,Johnson 58A,Devon Energy Production Company LP,Karnes,Eagle Ford,29.111576,-97.95621,9481,2022-08-03,Active,Oil,320
+42255003210002,Thomas 523H,Devon Energy Production Company LP,Karnes,Eagle Ford,29.030512,-98.120782,12029,2023-05-04,Active,Oil,321
+42255003220002,Davis 87A,EOG Resources Inc,Karnes,Eagle Ford,29.013513,-97.83467,5067,2023-10-04,Active,Oil,322
+42255003230001,Martin 221H,Chevron USA Inc,Karnes,Eagle Ford,29.07741,-98.027825,6069,2022-02-16,Active,Oil,323
+42255003240001,Jones 632H,Apache Corporation,Karnes,Eagle Ford,28.982371,-97.939856,10885,2022-07-12,Active,Oil,324
+42255003250002,Smith 16C,Centennial Resource Production LLC,Karnes,Eagle Ford,28.80765,-98.087839,11006,2023-12-30,Active,Oil,325
+42255003260002,Johnson 84B,EOG Resources Inc,Karnes,Eagle Ford,28.950077,-97.879839,5323,2022-02-19,Active,Oil,326
+42255003270102,Jones 89D,Concho Resources Inc,Karnes,Eagle Ford,28.977726,-98.138202,5152,2022-11-05,Active,Oil,327
+42255003280001,Brown 37B,ConocoPhillips Company,Karnes,Eagle Ford,29.064993,-98.065011,6867,2022-04-19,Active,Oil,328
+42255003290001,Thomas 211H,Independence Resources Management LLC,Karnes,Eagle Ford,28.8799,-98.068503,5645,2023-07-16,Active,Oil,329
+42255003300000,Williams 74B,Occidental Petroleum Corporation,Karnes,Eagle Ford,29.075282,-97.959668,13095,2022-06-02,Active,Oil,330
+42255003310001,Wilson 601H,SM Energy Company,Karnes,Eagle Ford,28.830019,-97.838212,5820,2022-04-13,Active,Oil,331
+42255003320102,Brown 98B,EOG Resources Inc,Karnes,Eagle Ford,29.140899,-98.019893,5751,2022-01-10,Active,Oil,332
+42255003330002,Williams 442H,Devon Energy Production Company LP,Karnes,Eagle Ford,28.931464,-97.752736,7996,2022-04-27,Active,Oil,333
+42255003340102,Miller 17B,Parsley Energy Operations LLC,Karnes,Eagle Ford,28.908733,-98.007142,5960,2022-06-13,Active,Oil,334
+42255003350002,Taylor 792H,Matador Production Company,Karnes,Eagle Ford,28.99307,-97.915528,5472,2023-12-02,Active,Oil,335
+42255003360100,Williams 841H,Diamondback E&P LLC,Karnes,Eagle Ford,28.993232,-97.955939,10148,2022-01-13,Active,Oil,336
+42255003370002,Martinez 56B,SM Energy Company,Karnes,Eagle Ford,29.107011,-97.911675,9072,2023-05-09,Active,Oil,337
+42255003380000,Miller 644H,Centennial Resource Production LLC,Karnes,Eagle Ford,28.859462,-97.786781,7709,2022-03-18,Active,Oil,338
+42255003390002,Taylor 313H,Callon Petroleum Operating Company,Karnes,Eagle Ford,28.896357,-97.714927,6291,2023-04-16,Active,Oil,339
+42255003400000,Moore 14A,Matador Production Company,Karnes,Eagle Ford,28.979239,-97.771705,11609,2023-02-27,Active,Oil,340
+42255003410002,Jackson 84D,Laredo Petroleum Inc,Karnes,Eagle Ford,28.800068,-98.154552,12474,2022-12-16,Active,Oil,341
+42255003420102,Anderson 154H,EOG Resources Inc,Karnes,Eagle Ford,29.126635,-97.777841,6596,2023-11-06,Active,Oil,342
+42255003430002,Brown 22A,Callon Petroleum Operating Company,Karnes,Eagle Ford,28.942056,-97.883169,13067,2022-05-24,Active,Oil,343
+42255003440001,Davis 254H,Concho Resources Inc,Karnes,Eagle Ford,28.842785,-97.894574,10536,2022-04-21,Active,Oil,344
+42255003450001,Hernandez 64C,EOG Resources Inc,Karnes,Eagle Ford,29.170651,-97.781267,5071,2023-06-28,Active,Oil,345
+42255003460002,Thompson 94C,Laredo Petroleum Inc,Karnes,Eagle Ford,29.174123,-97.780592,7103,2022-04-17,Active,Oil,346
+42255003470102,Garcia 511H,Independence Resources Management LLC,Karnes,Eagle Ford,29.042464,-98.039078,10617,2022-10-29,Active,Oil,347
+42255003480002,Jackson 922H,Diamondback E&P LLC,Karnes,Eagle Ford,28.855272,-97.898738,14069,2023-10-10,Active,Oil,348
+42255003490002,Miller 912H,Occidental Petroleum Corporation,Karnes,Eagle Ford,29.049667,-98.05471,6890,2022-12-27,Active,Oil,349
+42255003500001,Smith 4B,Matador Production Company,Karnes,Eagle Ford,29.028255,-97.866421,11240,2022-05-29,Active,Oil,350
+42255003510002,Rodriguez 8C,EOG Resources Inc,Karnes,Eagle Ford,28.879961,-97.824907,9835,2022-07-28,Active,Oil,351
+42255003520002,Jackson 313H,EOG Resources Inc,Karnes,Eagle Ford,28.943473,-97.973703,13370,2023-12-14,Active,Oil,352
+42255003530000,Rodriguez 80D,EOG Resources Inc,Karnes,Eagle Ford,29.170594,-98.006223,12259,2022-08-19,Active,Oil,353
+42255003540002,Davis 581H,Endeavor Energy Resources LP,Karnes,Eagle Ford,29.102043,-97.926692,7906,2023-12-01,Active,Oil,354
+42255003550101,Jackson 171H,Devon Energy Production Company LP,Karnes,Eagle Ford,29.094032,-98.140323,7636,2023-08-22,Active,Oil,355
+42255003560000,Martinez 81A,Permian Resources Operating LLC,Karnes,Eagle Ford,28.932225,-97.845155,9934,2023-05-18,Shut-in,Oil,356
+42255003570000,Martin 65B,Laredo Petroleum Inc,Karnes,Eagle Ford,28.943234,-97.807984,7611,2023-03-02,Active,Oil,357
+42255003580001,Anderson 281H,Centennial Resource Production LLC,Karnes,Eagle Ford,28.836778,-98.089401,13691,2023-05-02,Active,Oil,358
+42255003590000,Martinez 153H,Permian Resources Operating LLC,Karnes,Eagle Ford,28.845889,-98.026996,11322,2022-09-20,Active,Oil,359
+42255003600101,Johnson 841H,Apache Corporation,Karnes,Eagle Ford,28.809882,-97.941566,8154,2022-11-25,Active,Oil,360
+42255003610002,Williams 86D,ConocoPhillips Company,Karnes,Eagle Ford,28.866958,-97.721862,8492,2023-12-03,Active,Oil,361
+42255003620002,Jones 59A,ConocoPhillips Company,Karnes,Eagle Ford,28.882232,-97.785626,10434,2022-02-08,Active,Oil,362
+42255003630001,Thomas 583H,EOG Resources Inc,Karnes,Eagle Ford,28.871197,-98.074046,11626,2023-03-20,Active,Oil,363
+42255003640002,Thompson 90A,Centennial Resource Production LLC,Karnes,Eagle Ford,29.069319,-97.932583,6189,2023-01-02,Active,Oil,364
+42255003650001,Hernandez 513H,ConocoPhillips Company,Karnes,Eagle Ford,28.915935,-97.857061,5504,2023-05-01,Active,Oil,365
+42255003660002,Jones 871H,Chevron USA Inc,Karnes,Eagle Ford,28.854553,-98.004504,11113,2022-01-12,Active,Oil,366
+42255003670102,Jackson 40B,Laredo Petroleum Inc,Karnes,Eagle Ford,28.85655,-98.179113,8441,2022-12-19,Active,Oil,367
+42255003680000,Brown 86C,SM Energy Company,Karnes,Eagle Ford,28.856982,-98.108004,14294,2022-02-25,Active,Oil,368
+42255003690001,Brown 93D,Laredo Petroleum Inc,Karnes,Eagle Ford,28.984506,-97.925168,14512,2023-05-14,Active,Oil,369
+42255003700002,Williams 41D,Endeavor Energy Resources LP,Karnes,Eagle Ford,28.851286,-97.872264,12960,2023-04-07,Active,Oil,370
+42255003710001,Thomas 1C,Apache Corporation,Karnes,Eagle Ford,29.077383,-98.123803,10131,2022-09-10,Shut-in,Oil,371
+42255003720101,Hernandez 402H,Concho Resources Inc,Karnes,Eagle Ford,28.910672,-98.020257,12978,2023-07-19,Active,Oil,372
+42255003730001,Williams 3B,Independence Resources Management LLC,Karnes,Eagle Ford,28.832789,-98.059692,13309,2023-10-09,Active,Oil,373
+42255003740002,Rodriguez 844H,Matador Production Company,Karnes,Eagle Ford,29.03156,-97.8154,7435,2023-01-10,Active,Oil,374
+42255003750001,Anderson 85A,Matador Production Company,Karnes,Eagle Ford,29.093291,-98.0545,8913,2023-09-21,Active,Oil,375
+42389003760002,Moore 62H,SM Energy Company,Reeves,Permian Basin,31.256148,-103.836311,8585,2023-05-15,Active,Oil,376
+42389003770001,Moore 64H,Marathon Oil Company,Reeves,Permian Basin,31.347774,-103.882877,5653,2023-10-27,Active,Oil,377
+42389003780001,Taylor 762H,SM Energy Company,Reeves,Permian Basin,31.453427,-103.790602,6275,2023-06-14,Active,Oil,378
+42389003790101,White 65A,Chevron USA Inc,Reeves,Permian Basin,31.406549,-103.758841,7276,2023-03-27,Active,Oil,379
+42389003800000,Anderson 85B,Pioneer Natural Resources USA Inc,Reeves,Permian Basin,31.405817,-103.787676,8773,2023-03-01,Active,Oil,380
+42389003810002,Thomas 32A,ConocoPhillips Company,Reeves,Permian Basin,31.392607,-103.708474,5706,2022-05-11,Active,Oil,381
+42389003820000,Miller 241H,Devon Energy Production Company LP,Reeves,Permian Basin,31.25389,-103.694943,13464,2023-02-20,Active,Oil,382
+42389003830000,Hernandez 624H,Matador Production Company,Reeves,Permian Basin,31.455049,-103.548596,7794,2022-08-13,Active,Oil,383
+42389003840000,Martinez 774H,Independence Resources Management LLC,Reeves,Permian Basin,31.257085,-103.666942,14676,2022-03-12,Active,Oil,384
+42389003850100,White 23B,Centennial Resource Production LLC,Reeves,Permian Basin,31.252885,-103.893375,12796,2023-09-22,Active,Oil,385
+42389003860002,Jackson 87A,Laredo Petroleum Inc,Reeves,Permian Basin,31.401332,-103.852993,12069,2023-06-19,Active,Oil,386
+42389003870101,Thompson 55B,EOG Resources Inc,Reeves,Permian Basin,31.479057,-103.728417,7193,2022-09-18,Active,Oil,387
+42389003880101,Davis 91A,Chevron USA Inc,Reeves,Permian Basin,31.564034,-103.866473,5116,2023-08-15,Active,Oil,388
+42389003890101,Brown 55C,SM Energy Company,Reeves,Permian Basin,31.202878,-103.638182,14590,2022-09-17,Active,Oil,389
+42389003900100,Thomas 234H,Laredo Petroleum Inc,Reeves,Permian Basin,31.369425,-103.753742,11065,2023-07-27,Active,Oil,390
+42389003910002,Brown 58D,Marathon Oil Company,Reeves,Permian Basin,31.595403,-103.66894,7650,2022-04-13,Active,Oil,391
+42389003920000,Taylor 12A,Centennial Resource Production LLC,Reeves,Permian Basin,31.514432,-103.579659,7381,2023-04-28,Active,Oil,392
+42389003930002,Johnson 523H,Concho Resources Inc,Reeves,Permian Basin,31.235256,-103.794763,13536,2022-10-21,Active,Oil,393
+42389003940101,Smith 85D,Independence Resources Management LLC,Reeves,Permian Basin,31.222985,-103.590557,13489,2022-10-20,Active,Oil,394
+42389003950002,Johnson 312H,Independence Resources Management LLC,Reeves,Permian Basin,31.404219,-103.62062,5004,2022-06-11,Active,Oil,395
+42389003960102,Davis 95A,Marathon Oil Company,Reeves,Permian Basin,31.511869,-103.758749,6124,2022-04-03,Active,Oil,396
+42389003970002,Davis 524H,Laredo Petroleum Inc,Reeves,Permian Basin,31.566004,-103.760762,14419,2022-01-05,Active,Oil,397
+42389003980001,Brown 691H,Concho Resources Inc,Reeves,Permian Basin,31.402495,-103.676548,14419,2022-09-14,Active,Oil,398
+42389003990102,Hernandez 62A,Centennial Resource Production LLC,Reeves,Permian Basin,31.425267,-103.592013,6904,2022-09-22,Active,Oil,399
+42389004000101,Martin 90A,Chevron USA Inc,Reeves,Permian Basin,31.470765,-103.808028,9314,2022-09-12,Active,Oil,400
+42389004010001,Martinez 282H,Centennial Resource Production LLC,Reeves,Permian Basin,31.469479,-103.57157,14399,2022-10-03,Active,Oil,401
+42389004020000,Garcia 32D,Occidental Petroleum Corporation,Reeves,Permian Basin,31.3996,-103.820133,10833,2022-06-09,Shut-in,Oil,402
+42389004030002,Johnson 484H,ConocoPhillips Company,Reeves,Permian Basin,31.568075,-103.629675,10167,2023-05-20,Active,Oil,403
+42389004040001,Garcia 7C,Matador Production Company,Reeves,Permian Basin,31.547508,-103.703678,13613,2023-03-10,Active,Oil,404
+42389004050100,Martin 414H,Laredo Petroleum Inc,Reeves,Permian Basin,31.213025,-103.761084,5137,2022-01-13,Active,Oil,405
+42389004060000,Jackson 311H,Centennial Resource Production LLC,Reeves,Permian Basin,31.432403,-103.769826,9413,2023-04-28,Active,Oil,406
+42389004070102,Anderson 522H,Callon Petroleum Operating Company,Reeves,Permian Basin,31.34637,-103.700492,9581,2023-04-07,Active,Oil,407
+42389004080000,Jackson 493H,Diamondback E&P LLC,Reeves,Permian Basin,31.591709,-103.625595,8212,2022-05-30,Shut-in,Oil,408
+42389004090100,Martin 632H,Diamondback E&P LLC,Reeves,Permian Basin,31.389195,-103.896103,9915,2022-09-14,Active,Oil,409
+42389004100000,Rodriguez 814H,Matador Production Company,Reeves,Permian Basin,31.219084,-103.86041,6577,2023-04-06,Active,Oil,410
+42389004110000,Thomas 45B,Marathon Oil Company,Reeves,Permian Basin,31.344385,-103.67586,14921,2022-07-23,Active,Oil,411
+42389004120002,Martin 954H,Laredo Petroleum Inc,Reeves,Permian Basin,31.269816,-103.587876,12322,2022-03-22,Active,Oil,412
+42389004130001,White 103H,Apache Corporation,Reeves,Permian Basin,31.385501,-103.517362,6296,2022-06-15,Active,Oil,413
+42389004140101,Hernandez 962H,Callon Petroleum Operating Company,Reeves,Permian Basin,31.326751,-103.783457,14616,2023-06-18,Active,Oil,414
+42389004150002,Rodriguez 27B,Concho Resources Inc,Reeves,Permian Basin,31.266927,-103.558315,7734,2023-02-11,Active,Oil,415
+42389004160001,Martin 14B,Pioneer Natural Resources USA Inc,Reeves,Permian Basin,31.574717,-103.710726,9300,2023-09-25,Active,Oil,416
+42389004170102,Jones 68C,Centennial Resource Production LLC,Reeves,Permian Basin,31.323748,-103.801041,7795,2022-01-30,Active,Oil,417
+42389004180102,Rodriguez 184H,Endeavor Energy Resources LP,Reeves,Permian Basin,31.544148,-103.769919,13835,2022-07-01,Active,Oil,418
+42389004190102,Jackson 451H,Parsley Energy Operations LLC,Reeves,Permian Basin,31.452419,-103.64566,12891,2023-07-07,Active,Oil,419
+42389004200001,Smith 67A,Pioneer Natural Resources USA Inc,Reeves,Permian Basin,31.376744,-103.753687,7233,2022-12-19,Active,Oil,420
+42389004210000,Thomas 771H,Laredo Petroleum Inc,Reeves,Permian Basin,31.203327,-103.531165,8788,2022-01-08,Active,Oil,421
+42389004220000,Taylor 293H,Occidental Petroleum Corporation,Reeves,Permian Basin,31.364694,-103.675778,9308,2022-03-23,Active,Oil,422
+42389004230001,Jackson 531H,Chevron USA Inc,Reeves,Permian Basin,31.406644,-103.580016,8080,2022-03-12,Active,Oil,423
+42389004240002,White 254H,Apache Corporation,Reeves,Permian Basin,31.244143,-103.717863,10253,2022-01-20,Active,Oil,424
+42389004250000,Hernandez 30A,Laredo Petroleum Inc,Reeves,Permian Basin,31.208852,-103.511067,6477,2022-06-04,Active,Oil,425
+42389004260001,Johnson 112H,Occidental Petroleum Corporation,Reeves,Permian Basin,31.336765,-103.775369,7393,2022-02-27,Active,Oil,426
+42389004270001,Smith 99B,Centennial Resource Production LLC,Reeves,Permian Basin,31.228554,-103.711941,9078,2023-01-30,Shut-in,Oil,427
+42389004280102,Brown 61D,Parsley Energy Operations LLC,Reeves,Permian Basin,31.298865,-103.502186,11375,2023-11-29,Active,Oil,428
+42389004290001,Moore 261H,Callon Petroleum Operating Company,Reeves,Permian Basin,31.263445,-103.608705,10905,2022-02-23,Active,Oil,429
+42389004300000,Miller 751H,Occidental Petroleum Corporation,Reeves,Permian Basin,31.58931,-103.805614,6960,2023-02-10,Shut-in,Oil,430
+42389004310001,Williams 21D,Permian Resources Operating LLC,Reeves,Permian Basin,31.587534,-103.667569,13190,2022-04-04,Active,Oil,431
+42389004320001,Jones 17B,Callon Petroleum Operating Company,Reeves,Permian Basin,31.57234,-103.501211,12992,2022-08-27,Active,Oil,432
+42389004330000,Taylor 932H,Laredo Petroleum Inc,Reeves,Permian Basin,31.515425,-103.597321,7207,2022-09-14,Active,Oil,433
+42389004340100,Thompson 70C,Cimarex Energy Company,Reeves,Permian Basin,31.48265,-103.67639,10696,2022-11-28,Active,Oil,434
+42389004350000,Martin 58C,Marathon Oil Company,Reeves,Permian Basin,31.547065,-103.660528,9844,2022-09-27,Active,Oil,435
+42389004360000,White 802H,Parsley Energy Operations LLC,Reeves,Permian Basin,31.200288,-103.64479,8912,2022-11-25,Active,Oil,436
+42389004370002,Wilson 532H,Laredo Petroleum Inc,Reeves,Permian Basin,31.52762,-103.824052,10276,2022-04-24,Active,Oil,437
+42389004380000,Brown 254H,Pioneer Natural Resources USA Inc,Reeves,Permian Basin,31.217511,-103.52488,6617,2022-02-02,Active,Oil,438
+42389004390000,Anderson 78D,Centennial Resource Production LLC,Reeves,Permian Basin,31.463169,-103.689671,6161,2022-01-14,Active,Oil,439
+42389004400102,Johnson 722H,Occidental Petroleum Corporation,Reeves,Permian Basin,31.4623,-103.528639,11814,2023-01-13,Shut-in,Oil,440
+42389004410001,Williams 67D,EOG Resources Inc,Reeves,Permian Basin,31.529457,-103.793674,6591,2022-04-14,Active,Oil,441
+42389004420002,Jackson 963H,Laredo Petroleum Inc,Reeves,Permian Basin,31.354132,-103.822752,6728,2023-10-16,Active,Oil,442
+42389004430000,Jackson 653H,Parsley Energy Operations LLC,Reeves,Permian Basin,31.48102,-103.72917,10529,2023-11-05,Active,Oil,443
+42389004440001,Thomas 933H,Independence Resources Management LLC,Reeves,Permian Basin,31.377205,-103.75907,10299,2023-09-16,Active,Oil,444
+42389004450001,Hernandez 13H,Laredo Petroleum Inc,Reeves,Permian Basin,31.285571,-103.593717,5567,2022-10-19,Active,Oil,445
+42389004460000,Davis 32H,SM Energy Company,Reeves,Permian Basin,31.254034,-103.54387,9521,2023-07-21,Active,Oil,446
+42389004470101,Jones 34C,Matador Production Company,Reeves,Permian Basin,31.570369,-103.838114,11014,2023-08-20,Active,Oil,447
+42389004480002,Williams 622H,Marathon Oil Company,Reeves,Permian Basin,31.52443,-103.863238,7832,2023-05-15,Active,Oil,448
+42389004490002,Thompson 113H,Matador Production Company,Reeves,Permian Basin,31.527806,-103.861854,5916,2022-12-09,Active,Oil,449
+42389004500002,Taylor 40A,Concho Resources Inc,Reeves,Permian Basin,31.366609,-103.552868,13591,2022-02-12,Active,Oil,450
+42389004510000,Taylor 974H,Matador Production Company,Reeves,Permian Basin,31.259832,-103.699039,14750,2023-08-13,Active,Oil,451
+42389004520001,Williams 744H,Chevron USA Inc,Reeves,Permian Basin,31.372774,-103.585453,5807,2023-07-16,Active,Oil,452
+42389004530001,Jackson 63D,Pioneer Natural Resources USA Inc,Reeves,Permian Basin,31.359411,-103.726204,11476,2023-10-30,Active,Oil,453
+42389004540000,Rodriguez 423H,Laredo Petroleum Inc,Reeves,Permian Basin,31.446399,-103.605733,14437,2022-04-02,Active,Oil,454
+42389004550002,Smith 221H,Concho Resources Inc,Reeves,Permian Basin,31.369416,-103.760677,10729,2023-09-24,Active,Oil,455
+42389004560002,Anderson 97C,Parsley Energy Operations LLC,Reeves,Permian Basin,31.449273,-103.723815,6405,2022-04-26,Active,Oil,456
+42389004570001,Brown 581H,Chevron USA Inc,Reeves,Permian Basin,31.579576,-103.529308,12719,2022-01-24,Active,Oil,457
+42389004580102,Jones 49A,Laredo Petroleum Inc,Reeves,Permian Basin,31.28475,-103.68143,14551,2023-11-11,Active,Oil,458
+42389004590000,Hernandez 9A,Marathon Oil Company,Reeves,Permian Basin,31.268128,-103.786395,11367,2023-11-08,Active,Oil,459
+42389004600001,Martin 41B,Endeavor Energy Resources LP,Reeves,Permian Basin,31.545713,-103.892369,12940,2023-09-04,Active,Oil,460
+42389004610000,Garcia 431H,Devon Energy Production Company LP,Reeves,Permian Basin,31.27955,-103.513283,13027,2023-02-07,Active,Oil,461
+42389004620002,Rodriguez 81A,Permian Resources Operating LLC,Reeves,Permian Basin,31.338712,-103.759235,9221,2023-02-01,Active,Oil,462
+42389004630001,Taylor 12C,Permian Resources Operating LLC,Reeves,Permian Basin,31.577655,-103.520353,11262,2023-06-18,Active,Oil,463
+42389004640002,Jones 403H,Independence Resources Management LLC,Reeves,Permian Basin,31.549081,-103.625391,14918,2022-12-04,Active,Oil,464
+42389004650000,Wilson 56C,Diamondback E&P LLC,Reeves,Permian Basin,31.282703,-103.844569,7378,2023-11-03,Active,Oil,465
+42389004660001,Jones 98A,Devon Energy Production Company LP,Reeves,Permian Basin,31.326998,-103.677064,10221,2023-02-28,Active,Oil,466
+42389004670000,Brown 24C,Apache Corporation,Reeves,Permian Basin,31.377202,-103.526493,5429,2023-09-19,Active,Oil,467
+42389004680002,Smith 112H,Independence Resources Management LLC,Reeves,Permian Basin,31.426817,-103.807635,12808,2022-05-18,Active,Oil,468
+42389004690101,Moore 21C,Independence Resources Management LLC,Reeves,Permian Basin,31.387505,-103.640173,8166,2022-08-20,Active,Oil,469
+42389004700000,Williams 57C,Permian Resources Operating LLC,Reeves,Permian Basin,31.570174,-103.519921,13027,2023-12-06,Active,Oil,470
+42389004710102,Martinez 793H,Parsley Energy Operations LLC,Reeves,Permian Basin,31.555035,-103.728978,14370,2023-09-01,Active,Oil,471
+42389004720002,Jackson 953H,EOG Resources Inc,Reeves,Permian Basin,31.40826,-103.719356,5643,2023-07-26,Active,Oil,472
+42389004730001,Miller 383H,EOG Resources Inc,Reeves,Permian Basin,31.27594,-103.724178,5893,2023-12-08,Active,Oil,473
+42389004740000,Thompson 51C,Diamondback E&P LLC,Reeves,Permian Basin,31.385432,-103.641559,11775,2022-11-28,Active,Oil,474
+42389004750100,Rodriguez 892H,Devon Energy Production Company LP,Reeves,Permian Basin,31.381472,-103.541353,7686,2022-05-07,Active,Oil,475
+42389004760001,Jackson 63H,Parsley Energy Operations LLC,Reeves,Permian Basin,31.453629,-103.865877,7799,2022-12-10,Active,Oil,476
+42389004770101,Wilson 374H,Diamondback E&P LLC,Reeves,Permian Basin,31.26485,-103.842157,7960,2022-05-01,Active,Oil,477
+42389004780101,Moore 78A,Occidental Petroleum Corporation,Reeves,Permian Basin,31.201413,-103.593842,13084,2022-09-01,Active,Oil,478
+42389004790000,Jackson 801H,Cimarex Energy Company,Reeves,Permian Basin,31.381495,-103.72325,14134,2022-08-01,Active,Oil,479
+42389004800002,Thompson 431H,Diamondback E&P LLC,Reeves,Permian Basin,31.222026,-103.760392,6436,2022-02-20,Active,Oil,480
+42389004810001,Thompson 52H,Devon Energy Production Company LP,Reeves,Permian Basin,31.264534,-103.786248,6525,2022-11-03,Active,Oil,481
+42389004820001,Moore 16C,Centennial Resource Production LLC,Reeves,Permian Basin,31.528106,-103.596623,9496,2022-12-04,Active,Oil,482
+42389004830002,Martin 62B,SM Energy Company,Reeves,Permian Basin,31.283938,-103.81638,14908,2023-12-25,Active,Oil,483
+42389004840000,White 674H,Independence Resources Management LLC,Reeves,Permian Basin,31.539119,-103.796136,13154,2023-05-20,Shut-in,Oil,484
+42389004850000,Smith 814H,Independence Resources Management LLC,Reeves,Permian Basin,31.293089,-103.783805,6932,2022-08-01,Shut-in,Oil,485
+42389004860000,Davis 331H,Concho Resources Inc,Reeves,Permian Basin,31.365616,-103.766483,6111,2022-11-12,Active,Oil,486
+42389004870001,Thompson 23A,Laredo Petroleum Inc,Reeves,Permian Basin,31.32957,-103.897547,8178,2022-12-05,Active,Oil,487
+42389004880100,Hernandez 602H,Cimarex Energy Company,Reeves,Permian Basin,31.566465,-103.581098,11782,2022-02-27,Active,Oil,488
+42389004890000,Thompson 462H,Apache Corporation,Reeves,Permian Basin,31.425977,-103.628721,6084,2022-06-02,Active,Oil,489
+42389004900002,White 243H,Permian Resources Operating LLC,Reeves,Permian Basin,31.335661,-103.749904,14751,2022-04-30,Active,Oil,490
+42389004910001,Williams 314H,Apache Corporation,Reeves,Permian Basin,31.482106,-103.7742,11088,2023-04-08,Active,Oil,491
+42389004920000,Davis 57B,Apache Corporation,Reeves,Permian Basin,31.286456,-103.779073,13290,2022-01-26,Shut-in,Oil,492
+42389004930001,Jones 67B,SM Energy Company,Reeves,Permian Basin,31.261631,-103.763954,7174,2022-07-30,Active,Oil,493
+42389004940001,Johnson 43B,Parsley Energy Operations LLC,Reeves,Permian Basin,31.355035,-103.554076,12649,2022-02-17,Active,Oil,494
+42389004950000,Davis 361H,Apache Corporation,Reeves,Permian Basin,31.208992,-103.596602,13720,2022-11-23,Shut-in,Oil,495
+42389004960002,Jackson 27B,ConocoPhillips Company,Reeves,Permian Basin,31.309062,-103.837002,13888,2022-12-25,Active,Oil,496
+42389004970000,Williams 791H,Marathon Oil Company,Reeves,Permian Basin,31.256623,-103.618259,10549,2023-07-08,Active,Oil,497
+42389004980001,Johnson 55B,Diamondback E&P LLC,Reeves,Permian Basin,31.211597,-103.538683,11421,2022-07-03,Active,Oil,498
+42389004990001,Martinez 92D,Matador Production Company,Reeves,Permian Basin,31.451788,-103.62395,13740,2022-03-22,Active,Oil,499
+42389005000001,Wilson 614H,Parsley Energy Operations LLC,Reeves,Permian Basin,31.427116,-103.862834,8796,2022-08-18,Active,Oil,500

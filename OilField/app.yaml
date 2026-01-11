@@ -1,0 +1,58 @@
+name: oilfield
+region: nyc
+
+services:
+  - name: backend
+    image:
+      registry_type: GHCR
+      registry: o2alexanderfedin
+      repository: oilfield-backend
+      tag: latest
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    http_port: 3001
+    health_check:
+      http_path: /health
+      initial_delay_seconds: 30
+      period_seconds: 10
+    envs:
+      - key: NODE_ENV
+        scope: RUN_TIME
+        value: production
+      - key: PORT
+        scope: RUN_TIME
+        value: "3001"
+      - key: DATABASE_URL
+        scope: RUN_TIME
+        type: SECRET
+        value: ${DATABASE_URL}
+      - key: CORS_ORIGIN
+        scope: RUN_TIME
+        value: ${APP_URL}
+      - key: CLAUDE_CODE_OAUTH_TOKEN
+        scope: RUN_TIME
+        type: SECRET
+        value: ${CLAUDE_CODE_OAUTH_TOKEN}
+
+  - name: frontend
+    image:
+      registry_type: GHCR
+      registry: o2alexanderfedin
+      repository: oilfield-frontend
+      tag: latest
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    http_port: 8080
+    health_check:
+      http_path: /
+      initial_delay_seconds: 10
+      period_seconds: 10
+    routes:
+      - path: /
+
+databases:
+  - name: oilfield-db
+    engine: PG
+    version: "16"
+    size: db-s-dev-database
+    num_nodes: 1

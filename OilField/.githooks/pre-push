@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Pre-push hook to run full test suite and enforce git flow
+# Part of git flow enforcement
+
+set -e
+
+echo "🚀 Running pre-push checks..."
+
+# Get the branch being pushed
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+
+echo "📌 Pushing branch: $BRANCH_NAME"
+
+# Prevent direct push to main/master unless it's from a release or hotfix
+if [[ $BRANCH_NAME == "main" ]] || [[ $BRANCH_NAME == "master" ]]; then
+    # Check if the last commit is a merge from release or hotfix
+    LAST_COMMIT_MSG=$(git log -1 --pretty=%B)
+    if [[ ! $LAST_COMMIT_MSG =~ ^Merge\ branch\ \'(release|hotfix)/ ]]; then
+        echo "❌ ERROR: Direct push to '$BRANCH_NAME' is not allowed."
+        echo "   Only git flow release/hotfix finish is permitted."
+        exit 1
+    fi
+fi
+
+# Run full test suite for backend
+if [ -d "backend" ] && [ -f "backend/package.json" ]; then
+    echo "🧪 Running backend integration tests..."
+    cd backend
+    npm run test -- --run 2>/dev/null || npx vitest --run 2>/dev/null || {
+        echo "⚠️  Backend tests not configured or failed"
+    }
+    cd ..
+fi
+
+# Run full test suite for frontend
+if [ -d "frontend" ] && [ -f "frontend/package.json" ]; then
+    echo "🧪 Running frontend tests..."
+    cd frontend
+    npm run test -- --run 2>/dev/null || npm test 2>/dev/null || {
+        echo "⚠️  Frontend tests not configured or failed"
+    }
+    cd ..
+fi
+
+echo "✅ Pre-push checks passed!"
+exit 0

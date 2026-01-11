@@ -1,0 +1,17 @@
+# Python dependencies for OilField embeddings generation
+# Using Sentence Transformers for FREE local embeddings (all-MiniLM-L6-v2)
+
+# Core ML dependencies
+sentence-transformers>=2.2.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# Data processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Database connectivity
+psycopg2-binary>=2.9.0
+
+# Optional: Progress bars and utilities
+tqdm>=4.65.0

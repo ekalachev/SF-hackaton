@@ -246,12 +246,12 @@ echo "$(date): Enriched data for lead $LEAD_ID" >> logs/agent_activity.log
 ### Simple Cron Setup
 ```bash
 # Each agent polls for its tasks every minute
-* * * * * cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton && ./agents/task_monitor.sh
+* * * * * cd ~/Projects/hackathons/SF-hackaton && ./agents/task_monitor.sh
 
 # BackDirect agent runs every 5 minutes
-*/5 * * * * cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton && ./agents/lead_qualifier.sh CHECK_QUEUE
-*/5 * * * * cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton && ./agents/outreach_agent.sh CHECK_QUEUE
-*/5 * * * * cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton && ./agents/data_enricher.sh CHECK_QUEUE
+*/5 * * * * cd ~/Projects/hackathons/SF-hackaton && ./agents/lead_qualifier.sh CHECK_QUEUE
+*/5 * * * * cd ~/Projects/hackathons/SF-hackaton && ./agents/outreach_agent.sh CHECK_QUEUE
+*/5 * * * * cd ~/Projects/hackathons/SF-hackaton && ./agents/data_enricher.sh CHECK_QUEUE
 ```
 
 ---

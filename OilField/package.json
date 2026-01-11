@@ -1,0 +1,29 @@
+{
+  "name": "oilfield",
+  "version": "0.13.0",
+  "description": "## Project Overview Brief description of your project here.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o2alexanderfedin/OilField.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o2alexanderfedin/OilField/issues"
+  },
+  "homepage": "https://github.com/o2alexanderfedin/OilField#readme",
+  "dependencies": {
+    "@playwright/mcp": "^0.0.45"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.6"
+  }
+}

@@ -105,7 +105,7 @@ yum install gitflow       # RHEL/CentOS
 #### Step 3: Configure MCP Server
 
 ```bash
-cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton
+cd ~/Projects/hackathons/SF-hackaton
 
 # Run the MCP setup script
 ./setup_mcp.sh
@@ -245,7 +245,7 @@ For each contact, create a task in HubSpot:
 ### Step 7: Run Agent Scripts
 
 ```bash
-cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton
+cd ~/Projects/hackathons/SF-hackaton
 
 # Make all scripts executable
 chmod +x agents/*.sh
@@ -266,8 +266,8 @@ chmod +x agents/*.sh
 crontab -e
 
 # Add these lines (copy exactly):
-* * * * * cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton && ./agents/task_monitor.sh >> logs/cron.log 2>&1
-*/5 * * * * cd /Users/alexanderfedin/Projects/hackathons/SF-hackaton && ./agents/lead_qualifier.sh CHECK_QUEUE >> logs/cron.log 2>&1
+* * * * * cd ~/Projects/hackathons/SF-hackaton && ./agents/task_monitor.sh >> logs/cron.log 2>&1
+*/5 * * * * cd ~/Projects/hackathons/SF-hackaton && ./agents/lead_qualifier.sh CHECK_QUEUE >> logs/cron.log 2>&1
 
 # Save and exit (in vim: press Esc, then :wq)
 

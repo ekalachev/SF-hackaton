@@ -1,0 +1,138 @@
+#!/bin/bash
+
+# Pre-commit hook to enforce linting and type checking
+# Part of git flow enforcement
+
+set -e
+
+echo "🔍 Running pre-commit checks..."
+
+# Check if we're on a valid git flow branch
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+
+# Allow commits on feature/, release/, hotfix/, bugfix/, support/ branches and develop
+if [[ ! $BRANCH_NAME =~ ^(feature|release|hotfix|bugfix|support)/.+ ]] && \
+   [[ $BRANCH_NAME != "develop" ]]; then
+    echo "❌ ERROR: Direct commits to '$BRANCH_NAME' are not allowed."
+    echo "   Use git flow to create a feature, release, or hotfix branch."
+    echo ""
+    echo "   Examples:"
+    echo "   git flow feature start <feature-name>"
+    echo "   git flow release start <version>"
+    echo "   git flow hotfix start <version>"
+    exit 1
+fi
+
+# Prevent direct commits to main/master
+if [[ $BRANCH_NAME == "main" ]] || [[ $BRANCH_NAME == "master" ]]; then
+    echo "❌ ERROR: Direct commits to '$BRANCH_NAME' are not allowed."
+    echo "   Use git flow release or hotfix branches."
+    exit 1
+fi
+
+# Check if backend directory exists and has changes
+if [ -d "backend" ] && git diff --cached --name-only | grep -q "^backend/"; then
+    echo "🔧 Checking backend code..."
+
+    if [ -f "backend/package.json" ]; then
+        cd backend
+
+        # Run TypeScript compiler check
+        if [ -f "tsconfig.json" ]; then
+            echo "  📘 Running TypeScript type check..."
+            npm run type-check 2>/dev/null || npx tsc --noEmit || {
+                echo "❌ TypeScript type check failed!"
+                exit 1
+            }
+        fi
+
+        # Run linter
+        echo "  🧹 Running ESLint..."
+        npm run lint 2>/dev/null || npx eslint . --ext .ts,.tsx || {
+            echo "❌ ESLint check failed!"
+            exit 1
+        }
+
+        # Run unit tests
+        echo "  🧪 Running unit tests..."
+        npm run test:unit 2>/dev/null || npm test -- --testPathPattern=unit 2>/dev/null || {
+            echo "⚠️  Unit tests not configured or failed"
+        }
+
+        cd ..
+    fi
+fi
+
+# Check if frontend directory exists and has changes
+if [ -d "frontend" ] && git diff --cached --name-only | grep -q "^frontend/"; then
+    echo "🎨 Checking frontend code..."
+
+    if [ -f "frontend/package.json" ]; then
+        cd frontend
+
+        # Run TypeScript compiler check
+        if [ -f "tsconfig.json" ]; then
+            echo "  📘 Running TypeScript type check..."
+            npm run type-check 2>/dev/null || npx tsc --noEmit || {
+                echo "❌ TypeScript type check failed!"
+                exit 1
+            }
+        fi
+
+        # Run linter
+        echo "  🧹 Running ESLint..."
+        npm run lint 2>/dev/null || npx eslint . --ext .ts,.tsx || {
+            echo "❌ ESLint check failed!"
+            exit 1
+        }
+
+        # Run unit tests
+        echo "  🧪 Running unit tests..."
+        npm run test:unit 2>/dev/null || npm test -- --run 2>/dev/null || {
+            echo "⚠️  Unit tests not configured or failed"
+        }
+
+        cd ..
+    fi
+fi
+
+# Check Python code if it exists
+if [ -d "data-pipeline" ] && git diff --cached --name-only | grep -q "^data-pipeline/.*\.py$"; then
+    echo "🐍 Checking Python code..."
+
+    if [ -f "data-pipeline/requirements.txt" ]; then
+        cd data-pipeline
+
+        # Run black formatter check
+        if command -v black &> /dev/null; then
+            echo "  🖤 Running black formatter check..."
+            black --check . || {
+                echo "❌ Black formatter check failed! Run: black ."
+                exit 1
+            }
+        fi
+
+        # Run flake8 linter
+        if command -v flake8 &> /dev/null; then
+            echo "  🔍 Running flake8..."
+            flake8 . || {
+                echo "❌ Flake8 check failed!"
+                exit 1
+            }
+        fi
+
+        # Run mypy type checker
+        if command -v mypy &> /dev/null; then
+            echo "  📘 Running mypy type check..."
+            mypy . || {
+                echo "❌ MyPy type check failed!"
+                exit 1
+            }
+        fi
+
+        cd ..
+    fi
+fi
+
+echo "✅ Pre-commit checks passed!"
+exit 0
